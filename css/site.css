@@ -111,16 +111,36 @@ a { color: inherit; text-decoration: none; }
 .vhero .vh-links { display: flex; gap: 24px; }
 .vhero .tlink { color: #fff; }
 
-/* ---------- statement ---------- */
-.statement { padding: clamp(80px, 10vw, 150px) 0; text-align: center; }
-.statement h2 {
-  font-family: var(--serif); font-weight: 335;
-  font-size: clamp(2.2rem, 5.6vw, 4.8rem);
-  line-height: 1.04; letter-spacing: -0.015em;
-  max-width: 16em; margin: 0 auto;
+/* ---------- scroll reveal (the grand reveal) ---------- */
+.reveal { position: relative; height: 280vh; --p: 0; }
+.rv-pin {
+  position: sticky; top: 0; height: 100svh; overflow: hidden;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: clamp(30px, 5vh, 56px); text-align: center;
+  padding: 0 clamp(20px, 3.6vw, 56px);
 }
-.statement h2 em { font-style: italic; color: var(--flame); }
-.statement p { margin: 26px auto 0; color: var(--muted); max-width: 38em; font-size: 16px; }
+.rv-state { max-width: 62rem; opacity: calc((var(--p) - 0.45) * 2.6); transform: scale(calc(0.94 + 0.06 * var(--p))); }
+.rv-state h2 {
+  font-family: var(--serif); font-weight: 335;
+  font-size: clamp(2rem, 5.2vw, 4.4rem);
+  line-height: 1.04; letter-spacing: -0.015em;
+}
+.rv-state h2 em { font-style: italic; color: var(--flame); }
+.rv-state p { margin: 22px auto 0; color: var(--muted); max-width: 38em; font-size: 15.5px; }
+.rv-tiles { display: flex; gap: clamp(10px, 1.2vw, 16px); justify-content: center; }
+.rv-tiles figure {
+  width: clamp(96px, 11vw, 160px); border-radius: 8px; overflow: hidden; flex: none;
+  transform: translate(calc(var(--tx) * (1 - var(--p))), calc(var(--ty) * (1 - var(--p)))) rotate(calc(var(--r) * (1 - var(--p)))) scale(calc(1 + 0.6 * (1 - var(--p))));
+  opacity: calc(0.1 + var(--p) * 1.4);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+.rv-tiles img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { height: auto; padding: clamp(70px, 9vw, 130px) 0; }
+  .rv-pin { position: static; height: auto; }
+  .rv-state { opacity: 1; transform: none; }
+  .rv-tiles figure { transform: none; opacity: 1; }
+}
 
 /* ---------- reel bar ---------- */
 .reelsec { padding: 0 0 clamp(70px, 8vw, 110px); }

@@ -6,14 +6,14 @@
 > (2) consumer brands & e-commerce — stores, product/lifestyle imagery and
 > content, proven on a brand the studio built from zero. Nothing is
 > template-based. The studio works worldwide; the site is available in English,
-> French, German, Spanish and Italian.
+> French, German, Spanish, Italian, Portuguese and Polish.
 
 ## Facts
 
 - Business name: Sutra Haus (legal: Sutrahaus LLP)
 - Principal: Badal Kariwal
 - Contact: badal@sutrahaus.com
-- Website: https://sutrahaus.com/ (also /fr/, /de/, /es/, /it/)
+- Website: https://sutrahaus.com/ (also /fr/, /de/, /es/, /it/, /pt/, /pl/)
 - Base: Bengaluru, India — working worldwide, remote-first
 - Registered Indian LLP; GST details available on request
 

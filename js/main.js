@@ -71,6 +71,25 @@
     });
   });
 
+  // scroll reveal: drive --p from scroll progress through the section
+  var rev = document.querySelector('.reveal');
+  if (rev && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var ticking = false;
+    var driveReveal = function () {
+      ticking = false;
+      var total = rev.offsetHeight - window.innerHeight;
+      if (total <= 0) { rev.style.setProperty('--p', 1); return; }
+      var p = (window.scrollY - rev.offsetTop) / total;
+      rev.style.setProperty('--p', Math.min(1, Math.max(0, p)).toFixed(4));
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(driveReveal); }
+    }, { passive: true });
+    driveReveal();
+  } else if (rev) {
+    rev.style.setProperty('--p', 1);
+  }
+
   // suggest a translated page on English pages, once
   var banner = document.querySelector('.lang-banner');
   if (banner) {

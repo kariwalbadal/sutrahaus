@@ -7,13 +7,15 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const LOCALES = ['en', 'fr', 'de', 'es', 'it'];
-const LOCALE_LABELS = { en: 'EN', fr: 'FR', de: 'DE', es: 'ES', it: 'IT' };
+const LOCALES = ['en', 'fr', 'de', 'es', 'it', 'pt', 'pl'];
+const LOCALE_LABELS = { en: 'EN', fr: 'FR', de: 'DE', es: 'ES', it: 'IT', pt: 'PT', pl: 'PL' };
 const BANNER_TEXT = {
   fr: 'Voir cette page en français',
   de: 'Diese Seite auf Deutsch ansehen',
   es: 'Ver esta página en español',
   it: 'Vedere questa pagina in italiano',
+  pt: 'Ver esta página em português',
+  pl: 'Zobacz tę stronę po polsku',
 };
 const SITE = 'https://sutrahaus.com';
 
@@ -56,32 +58,41 @@ const REELS = [
   { f: 'hotel-dining', v: 'hotel' },
   { f: 'brand-coffee', v: 'brand' },
   { f: 'hotel-room', v: 'hotel' },
+  { f: 'brand-serum', v: 'brand' },
+  { f: 'brand-lipstick', v: 'brand' },
 ];
 const STILLS_HOTEL = [
-  'chinmaye/hotel-instagram-creative-scoreboard', 'grand/banquet-launch-creative-naam',
-  'chinmaye/hotel-instagram-creative-calendar', 'chinmaye/hotel-instagram-creative-akhbaar',
-  'grand/banquet-launch-creative-saat-phere', 'chinmaye/hotel-instagram-creative-mithai',
-  'chinmaye/hotel-instagram-creative-doli', 'grand/banquet-launch-creative-sehra',
-  'chinmaye/hotel-instagram-creative-rangoli', 'chinmaye/hotel-instagram-creative-kundli',
-  'grand/banquet-launch-creative-keyhole', 'chinmaye/hotel-instagram-creative-paan',
-  'chinmaye/hotel-instagram-creative-jhoola', 'grand/banquet-launch-creative-farmaan',
-  'chinmaye/hotel-instagram-creative-silbatta',
+  'chinmaye/hotel-instagram-creative-scoreboard', 'stock/stock-dining-candle',
+  'grand/banquet-launch-creative-naam', 'chinmaye/hotel-instagram-creative-calendar',
+  'stock/stock-cafe-niche', 'chinmaye/hotel-instagram-creative-akhbaar',
+  'grand/banquet-launch-creative-saat-phere', 'stock/stock-dining-chef',
+  'chinmaye/hotel-instagram-creative-mithai', 'chinmaye/hotel-instagram-creative-doli',
+  'stock/stock-cafe-cactus', 'grand/banquet-launch-creative-sehra',
+  'chinmaye/hotel-instagram-creative-rangoli', 'stock/stock-dining-bar',
+  'chinmaye/hotel-instagram-creative-kundli', 'grand/banquet-launch-creative-keyhole',
+  'chinmaye/hotel-instagram-creative-paan', 'chinmaye/hotel-instagram-creative-jhoola',
 ];
 const STILLS_BRAND = [
-  'ephoria/ephoria-product-photography-bundle', 'ephoria/ephoria-lifestyle-photography-kitchen',
-  'ephoria/ephoria-ingredient-flatlay', 'ephoria/ephoria-product-photography-afterhours',
-  'ephoria/ephoria-lifestyle-photography-dusk', 'ephoria/ephoria-product-photography-reset',
-  'ephoria/ephoria-lifestyle-photography-sofa', 'ephoria/ephoria-packaging-hero',
-  'ephoria/ephoria-lifestyle-photography-stretch', 'ephoria/ephoria-lifestyle-photography-elaan'.replace('ephoria/ephoria-lifestyle-photography-elaan', 'chinmaye/hotel-instagram-creative-elaan'),
+  'ephoria/ephoria-product-photography-bundle', 'stock/stock-fashion-studio',
+  'ephoria/ephoria-lifestyle-photography-kitchen', 'stock/stock-jewelry-silk',
+  'ephoria/ephoria-ingredient-flatlay', 'stock/stock-beauty-palette',
+  'ephoria/ephoria-product-photography-afterhours', 'stock/stock-fashion-mono',
+  'ephoria/ephoria-lifestyle-photography-dusk', 'stock/stock-street-orange',
+  'ephoria/ephoria-product-photography-reset', 'stock/stock-jewelry-hand',
+  'ephoria/ephoria-lifestyle-photography-sofa', 'stock/stock-beauty-lipstick',
+  'ephoria/ephoria-packaging-hero', 'stock/stock-fashion-portrait',
+  'ephoria/ephoria-lifestyle-photography-stretch', 'stock/stock-street-dark',
 ];
 const STILLS_HOME_2 = [
-  'ephoria/ephoria-product-photography-bundle', 'chinmaye/hotel-instagram-creative-doodh',
-  'ephoria/ephoria-lifestyle-photography-kitchen', 'grand/banquet-launch-creative-flapboard',
-  'ephoria/ephoria-ingredient-flatlay', 'chinmaye/hotel-instagram-creative-istri',
-  'ephoria/ephoria-product-photography-afterhours', 'grand/banquet-launch-creative-kadam',
-  'ephoria/ephoria-lifestyle-photography-sofa', 'chinmaye/hotel-instagram-creative-nazar',
-  'ephoria/ephoria-product-photography-reset', 'grand/banquet-launch-creative-tasveer',
-  'ephoria/ephoria-lifestyle-photography-stretch', 'chinmaye/hotel-instagram-creative-gully',
+  'ephoria/ephoria-product-photography-bundle', 'stock/stock-fashion-studio',
+  'chinmaye/hotel-instagram-creative-doodh', 'stock/stock-jewelry-silk',
+  'ephoria/ephoria-lifestyle-photography-kitchen', 'stock/stock-beauty-palette',
+  'grand/banquet-launch-creative-flapboard', 'stock/stock-street-orange',
+  'ephoria/ephoria-ingredient-flatlay', 'stock/stock-fashion-mono',
+  'chinmaye/hotel-instagram-creative-istri', 'stock/stock-jewelry-hand',
+  'ephoria/ephoria-product-photography-afterhours', 'stock/stock-beauty-lipstick',
+  'grand/banquet-launch-creative-kadam', 'stock/stock-fashion-portrait',
+  'ephoria/ephoria-lifestyle-photography-sofa', 'stock/stock-street-dark',
 ];
 
 function reelTile(r, root, t) {
@@ -150,7 +161,7 @@ for (const locale of LOCALES) {
 
     let banner = '';
     if (locale === 'en') {
-      const attrs = ['fr', 'de', 'es', 'it']
+      const attrs = ['fr', 'de', 'es', 'it', 'pt', 'pl']
         .map((l) => `data-${l}="${root}${l}/${page.dir}" data-${l}-label="${BANNER_TEXT[l]}"`)
         .join(' ');
       banner = `<div class="lang-banner" ${attrs}><span class="lb-slot"></span><button aria-label="Dismiss" class="lb-close">×</button></div>`;

@@ -7,6 +7,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -16,6 +18,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -25,6 +29,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -34,6 +40,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -43,6 +51,30 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://sutrahaus.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sutrahaus.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sutrahaus.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://sutrahaus.com/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sutrahaus.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sutrahaus.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -52,6 +84,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/hotels/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/hotels/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/hotels/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -61,6 +95,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/hotels/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/hotels/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/hotels/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -70,6 +106,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/hotels/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/hotels/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/hotels/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -79,6 +117,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/hotels/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/hotels/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/hotels/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -88,6 +128,30 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/hotels/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/hotels/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/hotels/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://sutrahaus.com/pt/hotels/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sutrahaus.com/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sutrahaus.com/fr/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/hotels/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://sutrahaus.com/pl/hotels/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sutrahaus.com/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sutrahaus.com/fr/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/hotels/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -97,6 +161,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/commerce/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/commerce/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/commerce/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -106,6 +172,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/commerce/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/commerce/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/commerce/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -115,6 +183,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/commerce/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/commerce/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/commerce/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -124,6 +194,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/commerce/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/commerce/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/commerce/"/>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -133,6 +205,30 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/commerce/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/commerce/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/commerce/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://sutrahaus.com/pt/commerce/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sutrahaus.com/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sutrahaus.com/fr/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/commerce/"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://sutrahaus.com/pl/commerce/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sutrahaus.com/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sutrahaus.com/fr/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sutrahaus.com/de/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://sutrahaus.com/pt/commerce/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sutrahaus.com/pl/commerce/"/>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
