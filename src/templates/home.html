@@ -7,7 +7,7 @@
   <meta name="description" content="{{t:home.desc}}">
   <link rel="canonical" href="{{canonical}}">
 {{alternates}}
-  <meta name="theme-color" content="#16132b">
+  <meta name="theme-color" content="#0f0d1c">
   <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-180.png">
   <link rel="apple-touch-icon" href="{{root}}assets/img/favicon-180.png">
   <meta property="og:type" content="website">
@@ -34,18 +34,16 @@
     "description": "{{tj:home.desc}}",
     "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
     "areaServed": "Worldwide",
-    "knowsAbout": ["Hotel website design", "Hotel marketing", "E-commerce design", "Art direction", "Social media imagery", "Short-form film", "SEO"]
+    "knowsAbout": ["Hotel website design", "Hotel marketing", "E-commerce design", "Art direction", "Social media imagery", "Short-form film", "Reels production", "SEO"]
   }
   </script>
 </head>
-<body class="has-vhero">
+<body>
 
 <header class="site-head" id="top">
   <div class="wrap">
     <a href="{{root}}{{home_path}}" class="lockup" aria-label="Sutra Haus">
-      <img src="{{root}}assets/img/sutra-logo.png" alt="Sutra" width="1280" height="525">
-      <span class="haus">Haus</span>
-      <span class="wm-light">Sutra&nbsp;·&nbsp;Haus</span>
+      <span class="wm-light">Sutra<i>&nbsp;·&nbsp;</i>Haus</span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">{{t:common.menu}}</button>
     <nav class="nav">
@@ -63,6 +61,7 @@
     <source src="{{root}}assets/video/hero-hotel.mp4" type="video/mp4">
   </video>
   <div class="wrap vh-inner">
+    <span class="label">{{t:home.eyebrow}}</span>
     <h1>{{t:home.h1}}</h1>
     <div class="vh-row">
       <p>{{t:home.lede}}</p>
@@ -74,39 +73,44 @@
   </div>
 </section>
 
-<div class="tm" aria-hidden="true">
-  <div class="tm-track">
-    <span>{{t:common.tm1}}<i>·</i></span><span>{{t:common.tm2}}<i>·</i></span><span>{{t:common.tm3}}<i>·</i></span><span>{{t:common.tm4}}<i>·</i></span><span>{{t:common.tm5}}<i>·</i></span>
-    <span>{{t:common.tm1}}<i>·</i></span><span>{{t:common.tm2}}<i>·</i></span><span>{{t:common.tm3}}<i>·</i></span><span>{{t:common.tm4}}<i>·</i></span><span>{{t:common.tm5}}<i>·</i></span>
-    <span>{{t:common.tm1}}<i>·</i></span><span>{{t:common.tm2}}<i>·</i></span><span>{{t:common.tm3}}<i>·</i></span><span>{{t:common.tm4}}<i>·</i></span><span>{{t:common.tm5}}<i>·</i></span>
-    <span>{{t:common.tm1}}<i>·</i></span><span>{{t:common.tm2}}<i>·</i></span><span>{{t:common.tm3}}<i>·</i></span><span>{{t:common.tm4}}<i>·</i></span><span>{{t:common.tm5}}<i>·</i></span>
-  </div>
-</div>
-
-<section class="wall" id="work">
+<section class="statement">
   <div class="wrap">
-    <div class="wall-head" data-reveal>
-      <h2>{{t:common.wall_h}}</h2>
-      <span class="label">{{t:common.wall_label}}</span>
+    <h2 data-reveal>{{t:common.statement_h}}</h2>
+    <p data-reveal>{{t:common.statement_p}}</p>
+  </div>
+</section>
+
+<section class="reelsec" id="reel">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>{{t:common.reel_h}}</h2>
+      <span class="label">{{t:common.reel_label}}</span>
     </div>
-    <div class="grid">
-      <figure class="wide" data-reveal><img src="{{root}}assets/img/shots/glimpse-hotel-web.jpg" alt="{{t:home.alt_hotel}}" width="1400" height="1071"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/chinmaye/hotel-instagram-creative-scoreboard.jpg" alt="" loading="lazy" width="800" height="1000"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/ephoria/ephoria-product-photography-bundle.jpg" alt="" loading="lazy" width="1100" height="1100"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/chinmaye/hotel-instagram-creative-calendar.jpg" alt="" loading="lazy" width="800" height="1000"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/grand/banquet-launch-creative-naam.jpg" alt="" loading="lazy" width="800" height="1000"></figure>
-      <figure class="wide" data-reveal><img src="{{root}}assets/img/ephoria/ephoria-lifestyle-photography-kitchen.jpg" alt="{{t:home.alt_brand}}" loading="lazy" width="1300" height="972"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/chinmaye/hotel-instagram-creative-mithai.jpg" alt="" loading="lazy" width="800" height="1000"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/ephoria/ephoria-ingredient-flatlay.jpg" alt="" loading="lazy" width="1100" height="1100"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/chinmaye/hotel-instagram-creative-akhbaar.jpg" alt="" loading="lazy" width="800" height="1000"></figure>
-      <figure class="wide" data-reveal><img src="{{root}}assets/img/shots/glimpse-ecom-web.jpg" alt="" loading="lazy" width="1600" height="667"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/grand/banquet-launch-creative-saat-phere.jpg" alt="" loading="lazy" width="800" height="1000"></figure>
-      <figure data-reveal><img src="{{root}}assets/img/chinmaye/hotel-instagram-creative-rangoli.jpg" alt="" loading="lazy" width="800" height="1000"></figure>
+  </div>
+  <div class="wrap">
+    <div class="reels">
+{{reel_tiles}}
     </div>
-    <div class="work-note" style="margin-top:26px" data-reveal>
-      <p>{{t:common.folio_note}}</p>
-      <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.folio_subject}}">{{t:common.folio_cta}} <span class="arr">→</span></a>
+  </div>
+</section>
+
+<section class="stillsec" id="stills">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>{{t:common.stills_h}}</h2>
+      <span class="label">{{t:common.stills_label}}</span>
     </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">{{stills_row1}}</div></div>
+  <div class="marquee rev" aria-hidden="true"><div class="marquee-track">{{stills_row2}}</div></div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="stat" data-reveal><b>125<span>+</span></b><i>{{t:common.stat1}}</i></div>
+    <div class="stat" data-reveal><b>20<span>+</span></b><i>{{t:common.stat2}}</i></div>
+    <div class="stat" data-reveal><b>2</b><i>{{t:common.stat3}}</i></div>
+    <div class="stat" data-reveal><b>5</b><i>{{t:common.stat4}}</i></div>
   </div>
 </section>
 
@@ -115,20 +119,67 @@
     <video autoplay muted loop playsinline poster="{{root}}assets/video/hotel-terrace-poster.jpg">
       <source src="{{root}}assets/video/hotel-terrace.mp4" type="video/mp4">
     </video>
+    <span class="chip hotel">{{t:common.chip_hotel}}</span>
     <div class="d-inner">
-      <span class="label">{{t:home.door1_label}}</span>
       <h2>{{t:home.door1_h}}</h2>
       <span class="tlink">{{t:home.door1_cta}} <span class="arr">→</span></span>
     </div>
   </a>
   <a class="door" href="{{commerce_href}}" data-reveal>
     <img src="{{root}}assets/img/ephoria/ephoria-lifestyle-photography-dusk.jpg" alt="" loading="lazy" width="1300" height="972">
+    <span class="chip brand">{{t:common.chip_brand}}</span>
     <div class="d-inner">
-      <span class="label">{{t:home.door2_label}}</span>
       <h2>{{t:home.door2_h}}</h2>
       <span class="tlink">{{t:home.door2_cta}} <span class="arr">→</span></span>
     </div>
   </a>
+</section>
+
+<section class="packs" id="plans">
+  <div class="wrap">
+    <span class="label" data-reveal>{{t:common.packs_label}}</span>
+    <div class="packs-head" data-reveal><h2>{{t:common.packs_h}}</h2></div>
+    <p class="startline" data-reveal>{{t:common.startline}}</p>
+    <div class="eng-grid" data-vertical="hotels">
+      <div class="eng" data-reveal>
+        <span class="no">01</span>
+        <h3>The Rebuild</h3>
+        <p class="sub">{{t:common.plan1_sub}}</p>
+        <ul>
+          <li class="lead">{{t:common.plan1_l1}}</li>
+          <li>{{t:common.plan1_l2}}</li>
+          <li>{{t:common.plan1_l3}}</li>
+          <li>{{t:common.plan1_l4}}</li>
+        </ul>
+        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Rebuild">{{t:common.begin}} <span class="arr">→</span></a>
+      </div>
+      <div class="eng" data-reveal>
+        <span class="no">02</span>
+        <h3>The Programme</h3>
+        <p class="sub">{{t:common.plan2_sub}}</p>
+        <ul>
+          <li class="lead">{{t:common.plan2_l1}}</li>
+          <li>{{t:common.plan2_l2}}</li>
+          <li>{{t:common.plan2_l3}}</li>
+          <li>{{t:common.plan2_l4}}</li>
+        </ul>
+        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Programme">{{t:common.begin}} <span class="arr">→</span></a>
+      </div>
+      <div class="eng" data-reveal>
+        <span class="no">03</span>
+        <h3>The Partnership</h3>
+        <p class="sub">{{t:common.plan3_sub}}</p>
+        <ul>
+          <li class="lead">{{t:common.plan3_l1}}</li>
+          <li>{{t:common.plan3_l2}}</li>
+          <li>{{t:common.plan3_l3}}</li>
+          <li>{{t:common.plan3_l4}}</li>
+        </ul>
+        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Partnership">{{t:common.begin}} <span class="arr">→</span></a>
+      </div>
+    </div>
+    <p class="fine" data-reveal>{{t:common.plans_fine}}</p>
+  </div>
 </section>
 
 <section class="studio" id="studio">
@@ -154,12 +205,13 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <a href="{{root}}{{home_path}}" class="fm">Sutra&nbsp;·&nbsp;Haus</a>
+    <a href="{{root}}{{home_path}}" class="fm">Sutra<i>&nbsp;·&nbsp;</i>Haus</a>
     <small>© 2026 Sutrahaus LLP — {{t:common.footer_line}}</small>
   </div>
 </footer>
 
 {{lang_banner}}
 <script src="{{root}}js/main.js" defer></script>
+<script src="{{root}}js/pricing.js" defer></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
   <link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/commerce/">
   <link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/commerce/">
   <link rel="alternate" hreflang="x-default" href="https://sutrahaus.com/commerce/">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0f0d1c">
   <link rel="icon" type="image/png" href="../../assets/img/favicon-180.png">
   <link rel="apple-touch-icon" href="../../assets/img/favicon-180.png">
   <meta property="og:type" content="website">
@@ -41,7 +41,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Pourquoi « à partir de » ?", "acceptedAnswer": { "@type": "Answer", "text": "Un lancement de trois produits et un catalogue de cinquante références sont deux métiers différents. Le plancher affiché correspond à votre région ; chaque proposition est établie sur mesure." } },
+      { "@type": "Question", "name": "Comment fonctionnent les tarifs ?", "acceptedAnswer": { "@type": "Answer", "text": "Les formules commencent au montant affiché ci-dessus pour une boutique complète — le devis exact dépend de votre marque et de votre marché, confirmé par e-mail. Sans surprise." } },
       { "@type": "Question", "name": "Travaillez-vous sur Shopify ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui — notre propre marque y tourne. Vous recevez une boutique que votre équipe peut gérer sans nous." } },
       { "@type": "Question", "name": "En combien de temps la boutique est-elle prête ?", "acceptedAnswer": { "@type": "Answer", "text": "La plupart des boutiques sont en ligne quelques semaines après validation du concept. Les formules mensuelles suivent un rythme fixe." } },
       { "@type": "Question", "name": "The Programme peut-il tourner sur une boutique existante ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui — images et contenus peuvent fonctionner seuls. Aucune refonte nécessaire." } }
@@ -54,9 +54,7 @@
 <header class="site-head" id="top">
   <div class="wrap">
     <a href="../../fr/" class="lockup" aria-label="Sutra Haus">
-      <img src="../../assets/img/sutra-logo.png" alt="Sutra" width="1280" height="525">
-      <span class="haus">Haus</span>
-      <span class="wm-light">Sutra&nbsp;·&nbsp;Haus</span>
+      <span class="wm-light">Sutra<i>&nbsp;·&nbsp;</i>Haus</span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">Menu</button>
     <nav class="nav">
@@ -72,7 +70,7 @@
 <section class="phero">
   <div class="wrap">
     <span class="label" data-reveal>Marques · E-commerce · D2C</span>
-    <h1 style="margin-top:26px" data-reveal>Vous créez le produit. <em>Nous le faisons vendre.</em></h1>
+    <h1 style="margin-top:24px" data-reveal>Vous créez le produit. <em>Nous le faisons vendre.</em></h1>
     <div class="p-row" data-reveal>
       <p>Boutique, images, contenus, films — tout ce qui relie votre produit au client, depuis un seul studio.</p>
       <a class="tlink" href="#plans">Formules & tarifs <span class="arr">↓</span></a>
@@ -86,6 +84,22 @@
     <div class="truth" data-reveal><span class="no">i</span><h3>Trois secondes pour être crédible.</h3></div>
     <div class="truth" data-reveal><span class="no">ii</span><h3>Un template, ça se voit.</h3></div>
     <div class="truth" data-reveal><span class="no">iii</span><h3>Le contenu est la muraille.</h3></div>
+  </div>
+</section>
+
+<section class="reelsec" id="reel">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>Le <em>reel</em></h2>
+      <span class="label">Films & publicités — touchez pour le son</span>
+    </div>
+    <div class="reels">
+      <div class="reel" data-audio="1"><span class="chip brand">Marque</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/brand-ephoria-1-poster.jpg"><source src="../../assets/video/reels/brand-ephoria-1.mp4" type="video/mp4"></video><button class="snd" aria-label="Sound">♪</button></div>
+      <div class="reel"><span class="chip brand">Marque</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/brand-perfume-poster.jpg"><source src="../../assets/video/reels/brand-perfume.mp4" type="video/mp4"></video></div>
+      <div class="reel" data-audio="1"><span class="chip brand">Marque</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/brand-ephoria-2-poster.jpg"><source src="../../assets/video/reels/brand-ephoria-2.mp4" type="video/mp4"></video><button class="snd" aria-label="Sound">♪</button></div>
+      <div class="reel"><span class="chip brand">Marque</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/brand-editorial-poster.jpg"><source src="../../assets/video/reels/brand-editorial.mp4" type="video/mp4"></video></div>
+      <div class="reel"><span class="chip brand">Marque</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/brand-coffee-poster.jpg"><source src="../../assets/video/reels/brand-coffee.mp4" type="video/mp4"></video></div>
+    </div>
   </div>
 </section>
 
@@ -128,45 +142,42 @@
   </div>
 </section>
 
+<section class="stillsec">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>Les <em>images</em></h2>
+      <span class="label">Créations visuelles — un langage par marque</span>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><figure><img src="../../assets/img/ephoria/ephoria-product-photography-bundle.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-lifestyle-photography-kitchen.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-ingredient-flatlay.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-product-photography-afterhours.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-lifestyle-photography-dusk.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-product-photography-reset.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-lifestyle-photography-sofa.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-packaging-hero.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-lifestyle-photography-stretch.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-elaan.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-product-photography-bundle.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-lifestyle-photography-kitchen.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-ingredient-flatlay.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-product-photography-afterhours.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-lifestyle-photography-dusk.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-product-photography-reset.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-lifestyle-photography-sofa.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-packaging-hero.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/ephoria/ephoria-lifestyle-photography-stretch.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-elaan.jpg" alt="" loading="lazy" width="800" height="1000"></figure></div></div>
+</section>
+
 <section class="packs" id="plans">
   <div class="wrap">
-    <div class="packs-head" data-reveal>
-      <h2>Formules &amp; <em>tarifs</em></h2>
-      <div class="curr">
-        <label for="curr-select">Devise</label>
-        <select id="curr-select" aria-label="Currency"></select>
-      </div>
-    </div>
+    <span class="label" data-reveal>Formules — tarifs par e-mail</span>
+    <div class="packs-head" data-reveal><h2>Les formules</h2></div>
+    <p class="startline" data-reveal>Les formules marque commencent à <b data-startprice="commerce">₹10,000</b> pour une boutique complète — créations de lancement offertes.</p>
     <div class="eng-grid" data-vertical="commerce">
       <div class="eng" data-reveal>
         <span class="no">01</span>
         <h3>The Rebuild</h3>
-        <p class="sub">Boutique + hébergement</p>
-        <p class="price">
-          <span class="from">À partir de</span>
-          <span class="amt" data-price="rebuild">—</span>
-          <span class="host">+ hébergement dès <span data-price="hosting">—</span> / mois</span>
-        </p>
+        <p class="sub">Le site, complet</p>
         <ul>
-          <li class="lead">Boutique complète, conçue & développée</li>
-          <li>Merchandising & parcours de conversion</li>
-          <li>Jeu d'images de lancement</li>
-          <li>En ligne en quelques semaines</li>
+          <li class="lead">Site complet, conçu & développé</li>
+          <li>Réservation / boutique intégrées</li>
+          <li>Hébergement, domaine & entretien</li>
+          <li>Prêt pour la recherche & l'IA</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject=Demande%20de%20formule%20—%20The%20Rebuild">Commencer <span class="arr">→</span></a>
       </div>
       <div class="eng" data-reveal>
         <span class="no">02</span>
         <h3>The Programme</h3>
-        <p class="sub">30 images / mois</p>
-        <p class="price">
-          <span class="from">À partir de</span>
-          <span class="amt" data-price="programme">—</span><span class="per">/ mois</span>
-        </p>
+        <p class="sub">Site + images</p>
         <ul>
-          <li class="lead">30 images originales par mois</li>
-          <li>Séries de campagne & de saison</li>
-          <li>Éditorial & textes sociaux</li>
+          <li class="lead">Tout The Rebuild</li>
+          <li>30 images originales par mois</li>
+          <li>Campagnes & légendes</li>
           <li>Un rapport mensuel</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject=Demande%20de%20formule%20—%20The%20Programme">Commencer <span class="arr">→</span></a>
@@ -174,31 +185,25 @@
       <div class="eng" data-reveal>
         <span class="no">03</span>
         <h3>The Partnership</h3>
-        <p class="sub">Images + films / mois</p>
-        <p class="price">
-          <span class="from">À partir de</span>
-          <span class="amt" data-price="partnership">—</span><span class="per">/ mois</span>
-        </p>
+        <p class="sub">Site + images + films</p>
         <ul>
-          <li class="lead">30 images + 8 films par mois</li>
-          <li>Accroches issues de la recherche</li>
+          <li class="lead">Tout The Programme</li>
+          <li>8 films courts par mois</li>
           <li>Calendrier éditorial permanent</li>
           <li>Priorité de production</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject=Demande%20de%20formule%20—%20The%20Partnership">Commencer <span class="arr">→</span></a>
       </div>
     </div>
-    <p class="fine" data-reveal>Les tarifs s'adaptent à votre région et à votre catégorie — les montants affichés sont des planchers honnêtes ; chaque proposition est établie sur mesure. Les noms des formules ne changent jamais. Chaque conversation commence gratuitement : <a href="mailto:badal@sutrahaus.com?subject=Concept%20offert">votre page d'accueil, réimaginée</a>.</p>
+    <p class="fine" data-reveal>Le devis exact est établi selon votre établissement ou votre marque et confirmé par e-mail — sans surprise. <b>Chaque création est personnalisée, jamais réutilisée, jamais partagée.</b> Vous aimez déjà votre site ? The Programme et The Partnership fonctionnent aussi seuls.</p>
   </div>
 </section>
 
 <section class="faq-sec" id="details">
   <div class="wrap">
-    <div class="wall-head" style="padding-top:clamp(60px,7vw,100px)" data-reveal>
-      <h2>En détail</h2>
-    </div>
+    <h2 data-reveal>En détail</h2>
     <div class="faq" data-reveal>
-      <details><summary>Pourquoi « à partir de » ?</summary><p class="a">Un lancement de trois produits et un catalogue de cinquante références sont deux métiers différents. Le plancher affiché correspond à votre région ; chaque proposition est établie sur mesure.</p></details>
+      <details><summary>Comment fonctionnent les tarifs ?</summary><p class="a">Les formules commencent au montant affiché ci-dessus pour une boutique complète — le devis exact dépend de votre marque et de votre marché, confirmé par e-mail. Sans surprise.</p></details>
       <details><summary>Travaillez-vous sur Shopify ?</summary><p class="a">Oui — notre propre marque y tourne. Vous recevez une boutique que votre équipe peut gérer sans nous.</p></details>
       <details><summary>En combien de temps la boutique est-elle prête ?</summary><p class="a">La plupart des boutiques sont en ligne quelques semaines après validation du concept. Les formules mensuelles suivent un rythme fixe.</p></details>
       <details><summary>The Programme peut-il tourner sur une boutique existante ?</summary><p class="a">Oui — images et contenus peuvent fonctionner seuls. Aucune refonte nécessaire.</p></details>
@@ -217,7 +222,7 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <a href="../../fr/" class="fm">Sutra&nbsp;·&nbsp;Haus</a>
+    <a href="../../fr/" class="fm">Sutra<i>&nbsp;·&nbsp;</i>Haus</a>
     <small>© 2026 Sutrahaus LLP — studio de design & média</small>
   </div>
 </footer>

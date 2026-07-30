@@ -34,6 +34,43 @@
     revealed.forEach(function (el) { el.classList.add('in'); });
   }
 
+  // reels: play while visible, pause offscreen; tap toggles sound on ad tiles
+  var reels = document.querySelectorAll('.reel');
+  if (reels.length && 'IntersectionObserver' in window) {
+    var vio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        var v = en.target.querySelector('video');
+        if (!v) return;
+        if (en.isIntersecting) { v.play().catch(function () {}); }
+        else { v.pause(); }
+      });
+    }, { threshold: 0.25 });
+    reels.forEach(function (r) { vio.observe(r); });
+  } else {
+    reels.forEach(function (r) {
+      var v = r.querySelector('video');
+      if (v) v.play().catch(function () {});
+    });
+  }
+  reels.forEach(function (r) {
+    var btn = r.querySelector('.snd');
+    var v = r.querySelector('video');
+    if (!btn || !v) return;
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      v.muted = !v.muted;
+      btn.textContent = v.muted ? '♪' : '✕';
+      if (!v.muted) {
+        document.querySelectorAll('.reel video').forEach(function (o) {
+          if (o !== v) o.muted = true;
+        });
+        document.querySelectorAll('.reel .snd').forEach(function (o) {
+          if (o !== btn) o.textContent = '♪';
+        });
+      }
+    });
+  });
+
   // suggest a translated page on English pages, once
   var banner = document.querySelector('.lang-banner');
   if (banner) {

@@ -12,7 +12,7 @@
   <link rel="alternate" hreflang="es" href="https://sutrahaus.com/es/hotels/">
   <link rel="alternate" hreflang="it" href="https://sutrahaus.com/it/hotels/">
   <link rel="alternate" hreflang="x-default" href="https://sutrahaus.com/hotels/">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0f0d1c">
   <link rel="icon" type="image/png" href="../../assets/img/favicon-180.png">
   <link rel="apple-touch-icon" href="../../assets/img/favicon-180.png">
   <meta property="og:type" content="website">
@@ -41,7 +41,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Pourquoi « à partir de » ?", "acceptedAnswer": { "@type": "Answer", "text": "Un établissement de trente chambres et un resort sont deux métiers différents. Le plancher affiché correspond à votre région et à votre catégorie ; chaque proposition est établie sur mesure — bien en dessous des devis d'agences comparables." } },
+      { "@type": "Question", "name": "Comment fonctionnent les tarifs ?", "acceptedAnswer": { "@type": "Answer", "text": "Les formules commencent au montant affiché ci-dessus pour une refonte complète — le devis exact dépend de la taille de votre établissement et de votre marché, confirmé par e-mail. Sans surprise." } },
       { "@type": "Question", "name": "Pouvons-nous garder notre moteur de réservation ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui — nous l'intégrons, et pouvons afficher en direct votre tarif direct battant le prix OTA." } },
       { "@type": "Question", "name": "En combien de temps le site est-il prêt ?", "acceptedAnswer": { "@type": "Answer", "text": "La plupart des sites sont en ligne quelques semaines après validation du concept. Les formules mensuelles suivent un rythme fixe, avec un rapport par cycle." } },
       { "@type": "Question", "name": "Pourquoi seulement des extraits ?", "acceptedAnswer": { "@type": "Answer", "text": "Par discrétion — les sites et les fils de nos clients leur appartiennent. Le portfolio complet est partagé en privé, sur demande." } }
@@ -54,9 +54,7 @@
 <header class="site-head" id="top">
   <div class="wrap">
     <a href="../../fr/" class="lockup" aria-label="Sutra Haus">
-      <img src="../../assets/img/sutra-logo.png" alt="Sutra" width="1280" height="525">
-      <span class="haus">Haus</span>
-      <span class="wm-light">Sutra&nbsp;·&nbsp;Haus</span>
+      <span class="wm-light">Sutra<i>&nbsp;·&nbsp;</i>Haus</span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">Menu</button>
     <nav class="nav">
@@ -72,7 +70,7 @@
 <section class="phero">
   <div class="wrap">
     <span class="label" data-reveal>Hôtels · Resorts · Résidences</span>
-    <h1 style="margin-top:26px" data-reveal>Dirigez l'hôtel. <em>Nous dirigeons le reste.</em></h1>
+    <h1 style="margin-top:24px" data-reveal>Dirigez l'hôtel. <em>Nous dirigeons le reste.</em></h1>
     <div class="p-row" data-reveal>
       <p>Site, réservations, images, films — toute la surface digitale de votre établissement, confiée à un seul studio.</p>
       <a class="tlink" href="#plans">Formules & tarifs <span class="arr">↓</span></a>
@@ -86,6 +84,23 @@
     <div class="truth" data-reveal><span class="no">i</span><h3>Les voyageurs jugent en secondes.</h3></div>
     <div class="truth" data-reveal><span class="no">ii</span><h3>Les OTA prennent 15 à 25 % de chaque réservation.</h3></div>
     <div class="truth" data-reveal><span class="no">iii</span><h3>Un fil muet vide les chambres.</h3></div>
+  </div>
+</section>
+
+<section class="reelsec" id="reel">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>Le <em>reel</em></h2>
+      <span class="label">Films & publicités — touchez pour le son</span>
+    </div>
+    <div class="reels">
+      <div class="reel"><span class="chip hotel">Hôtel</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/hotel-pool-poster.jpg"><source src="../../assets/video/reels/hotel-pool.mp4" type="video/mp4"></video></div>
+      <div class="reel"><span class="chip hotel">Hôtel</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/hotel-suite-poster.jpg"><source src="../../assets/video/reels/hotel-suite.mp4" type="video/mp4"></video></div>
+      <div class="reel"><span class="chip hotel">Hôtel</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/hotel-view-poster.jpg"><source src="../../assets/video/reels/hotel-view.mp4" type="video/mp4"></video></div>
+      <div class="reel"><span class="chip hotel">Hôtel</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/hotel-spa-poster.jpg"><source src="../../assets/video/reels/hotel-spa.mp4" type="video/mp4"></video></div>
+      <div class="reel"><span class="chip hotel">Hôtel</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/hotel-dining-poster.jpg"><source src="../../assets/video/reels/hotel-dining.mp4" type="video/mp4"></video></div>
+      <div class="reel"><span class="chip hotel">Hôtel</span><video muted loop playsinline preload="metadata" poster="../../assets/video/reels/hotel-room-poster.jpg"><source src="../../assets/video/reels/hotel-room.mp4" type="video/mp4"></video></div>
+    </div>
   </div>
 </section>
 
@@ -128,45 +143,42 @@
   </div>
 </section>
 
+<section class="stillsec">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>Les <em>images</em></h2>
+      <span class="label">Créations visuelles — un langage par marque</span>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-scoreboard.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-naam.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-calendar.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-akhbaar.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-saat-phere.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-mithai.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-doli.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-sehra.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-rangoli.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-kundli.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-keyhole.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-paan.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-jhoola.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-farmaan.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-silbatta.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-scoreboard.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-naam.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-calendar.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-akhbaar.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-saat-phere.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-mithai.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-doli.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-sehra.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-rangoli.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-kundli.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-keyhole.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-paan.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-jhoola.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/grand/banquet-launch-creative-farmaan.jpg" alt="" loading="lazy" width="800" height="1000"></figure><figure><img src="../../assets/img/chinmaye/hotel-instagram-creative-silbatta.jpg" alt="" loading="lazy" width="800" height="1000"></figure></div></div>
+</section>
+
 <section class="packs" id="plans">
   <div class="wrap">
-    <div class="packs-head" data-reveal>
-      <h2>Formules &amp; <em>tarifs</em></h2>
-      <div class="curr">
-        <label for="curr-select">Devise</label>
-        <select id="curr-select" aria-label="Currency"></select>
-      </div>
-    </div>
+    <span class="label" data-reveal>Formules — tarifs par e-mail</span>
+    <div class="packs-head" data-reveal><h2>Les formules</h2></div>
+    <p class="startline" data-reveal>Les formules hôtel commencent à <b data-startprice="hotels">₹5,000</b> pour une refonte complète de site — créations de lancement offertes.</p>
     <div class="eng-grid" data-vertical="hotels">
       <div class="eng" data-reveal>
         <span class="no">01</span>
         <h3>The Rebuild</h3>
-        <p class="sub">Site + hébergement</p>
-        <p class="price">
-          <span class="from">À partir de</span>
-          <span class="amt" data-price="rebuild">—</span>
-          <span class="host">+ hébergement dès <span data-price="hosting">—</span> / mois</span>
-        </p>
+        <p class="sub">Le site, complet</p>
         <ul>
           <li class="lead">Site complet, conçu & développé</li>
-          <li>Moteur de réservation + tarifs en direct</li>
+          <li>Réservation / boutique intégrées</li>
+          <li>Hébergement, domaine & entretien</li>
           <li>Prêt pour la recherche & l'IA</li>
-          <li>En ligne en quelques semaines</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject=Demande%20de%20formule%20—%20The%20Rebuild">Commencer <span class="arr">→</span></a>
       </div>
       <div class="eng" data-reveal>
         <span class="no">02</span>
         <h3>The Programme</h3>
-        <p class="sub">30 images / mois</p>
-        <p class="price">
-          <span class="from">À partir de</span>
-          <span class="amt" data-price="programme">—</span><span class="per">/ mois</span>
-        </p>
+        <p class="sub">Site + images</p>
         <ul>
-          <li class="lead">30 images originales par mois</li>
-          <li>Campagnes saisonnières & festives</li>
-          <li>Légendes & direction de grille</li>
+          <li class="lead">Tout The Rebuild</li>
+          <li>30 images originales par mois</li>
+          <li>Campagnes & légendes</li>
           <li>Un rapport mensuel</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject=Demande%20de%20formule%20—%20The%20Programme">Commencer <span class="arr">→</span></a>
@@ -174,31 +186,25 @@
       <div class="eng" data-reveal>
         <span class="no">03</span>
         <h3>The Partnership</h3>
-        <p class="sub">Images + films / mois</p>
-        <p class="price">
-          <span class="from">À partir de</span>
-          <span class="amt" data-price="partnership">—</span><span class="per">/ mois</span>
-        </p>
+        <p class="sub">Site + images + films</p>
         <ul>
-          <li class="lead">30 images + 8 films par mois</li>
-          <li>Accroches issues de la recherche</li>
+          <li class="lead">Tout The Programme</li>
+          <li>8 films courts par mois</li>
           <li>Calendrier éditorial permanent</li>
           <li>Priorité de production</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject=Demande%20de%20formule%20—%20The%20Partnership">Commencer <span class="arr">→</span></a>
       </div>
     </div>
-    <p class="fine" data-reveal>Les tarifs s'adaptent à votre région et à votre catégorie — les montants affichés sont des planchers honnêtes ; chaque proposition est établie sur mesure. Les noms des formules ne changent jamais. Chaque conversation commence gratuitement : <a href="mailto:badal@sutrahaus.com?subject=Concept%20offert">votre page d'accueil, réimaginée</a>.</p>
+    <p class="fine" data-reveal>Le devis exact est établi selon votre établissement ou votre marque et confirmé par e-mail — sans surprise. <b>Chaque création est personnalisée, jamais réutilisée, jamais partagée.</b> Vous aimez déjà votre site ? The Programme et The Partnership fonctionnent aussi seuls.</p>
   </div>
 </section>
 
 <section class="faq-sec" id="details">
   <div class="wrap">
-    <div class="wall-head" style="padding-top:clamp(60px,7vw,100px)" data-reveal>
-      <h2>En détail</h2>
-    </div>
+    <h2 data-reveal>En détail</h2>
     <div class="faq" data-reveal>
-      <details><summary>Pourquoi « à partir de » ?</summary><p class="a">Un établissement de trente chambres et un resort sont deux métiers différents. Le plancher affiché correspond à votre région et à votre catégorie ; chaque proposition est établie sur mesure — bien en dessous des devis d'agences comparables.</p></details>
+      <details><summary>Comment fonctionnent les tarifs ?</summary><p class="a">Les formules commencent au montant affiché ci-dessus pour une refonte complète — le devis exact dépend de la taille de votre établissement et de votre marché, confirmé par e-mail. Sans surprise.</p></details>
       <details><summary>Pouvons-nous garder notre moteur de réservation ?</summary><p class="a">Oui — nous l'intégrons, et pouvons afficher en direct votre tarif direct battant le prix OTA.</p></details>
       <details><summary>En combien de temps le site est-il prêt ?</summary><p class="a">La plupart des sites sont en ligne quelques semaines après validation du concept. Les formules mensuelles suivent un rythme fixe, avec un rapport par cycle.</p></details>
       <details><summary>Pourquoi seulement des extraits ?</summary><p class="a">Par discrétion — les sites et les fils de nos clients leur appartiennent. Le portfolio complet est partagé en privé, sur demande.</p></details>
@@ -217,7 +223,7 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <a href="../../fr/" class="fm">Sutra&nbsp;·&nbsp;Haus</a>
+    <a href="../../fr/" class="fm">Sutra<i>&nbsp;·&nbsp;</i>Haus</a>
     <small>© 2026 Sutrahaus LLP — studio de design & média</small>
   </div>
 </footer>

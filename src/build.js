@@ -44,6 +44,57 @@ const VERTICAL_CFG = {
   },
 };
 
+const REELS = [
+  { f: 'hotel-pool', v: 'hotel' },
+  { f: 'brand-ephoria-1', v: 'brand', audio: true },
+  { f: 'hotel-suite', v: 'hotel' },
+  { f: 'brand-perfume', v: 'brand' },
+  { f: 'hotel-view', v: 'hotel' },
+  { f: 'brand-ephoria-2', v: 'brand', audio: true },
+  { f: 'hotel-spa', v: 'hotel' },
+  { f: 'brand-editorial', v: 'brand' },
+  { f: 'hotel-dining', v: 'hotel' },
+  { f: 'brand-coffee', v: 'brand' },
+  { f: 'hotel-room', v: 'hotel' },
+];
+const STILLS_HOTEL = [
+  'chinmaye/hotel-instagram-creative-scoreboard', 'grand/banquet-launch-creative-naam',
+  'chinmaye/hotel-instagram-creative-calendar', 'chinmaye/hotel-instagram-creative-akhbaar',
+  'grand/banquet-launch-creative-saat-phere', 'chinmaye/hotel-instagram-creative-mithai',
+  'chinmaye/hotel-instagram-creative-doli', 'grand/banquet-launch-creative-sehra',
+  'chinmaye/hotel-instagram-creative-rangoli', 'chinmaye/hotel-instagram-creative-kundli',
+  'grand/banquet-launch-creative-keyhole', 'chinmaye/hotel-instagram-creative-paan',
+  'chinmaye/hotel-instagram-creative-jhoola', 'grand/banquet-launch-creative-farmaan',
+  'chinmaye/hotel-instagram-creative-silbatta',
+];
+const STILLS_BRAND = [
+  'ephoria/ephoria-product-photography-bundle', 'ephoria/ephoria-lifestyle-photography-kitchen',
+  'ephoria/ephoria-ingredient-flatlay', 'ephoria/ephoria-product-photography-afterhours',
+  'ephoria/ephoria-lifestyle-photography-dusk', 'ephoria/ephoria-product-photography-reset',
+  'ephoria/ephoria-lifestyle-photography-sofa', 'ephoria/ephoria-packaging-hero',
+  'ephoria/ephoria-lifestyle-photography-stretch', 'ephoria/ephoria-lifestyle-photography-elaan'.replace('ephoria/ephoria-lifestyle-photography-elaan', 'chinmaye/hotel-instagram-creative-elaan'),
+];
+const STILLS_HOME_2 = [
+  'ephoria/ephoria-product-photography-bundle', 'chinmaye/hotel-instagram-creative-doodh',
+  'ephoria/ephoria-lifestyle-photography-kitchen', 'grand/banquet-launch-creative-flapboard',
+  'ephoria/ephoria-ingredient-flatlay', 'chinmaye/hotel-instagram-creative-istri',
+  'ephoria/ephoria-product-photography-afterhours', 'grand/banquet-launch-creative-kadam',
+  'ephoria/ephoria-lifestyle-photography-sofa', 'chinmaye/hotel-instagram-creative-nazar',
+  'ephoria/ephoria-product-photography-reset', 'grand/banquet-launch-creative-tasveer',
+  'ephoria/ephoria-lifestyle-photography-stretch', 'chinmaye/hotel-instagram-creative-gully',
+];
+
+function reelTile(r, root, t) {
+  const chip = r.v === 'hotel' ? `<span class="chip hotel">${t('common.chip_hotel')}</span>` : `<span class="chip brand">${t('common.chip_brand')}</span>`;
+  const audio = r.audio ? ' data-audio="1"' : '';
+  const snd = r.audio ? '<button class="snd" aria-label="Sound">♪</button>' : '';
+  return `      <div class="reel"${audio}>${chip}<video muted loop playsinline preload="metadata" poster="${root}assets/video/reels/${r.f}-poster.jpg"><source src="${root}assets/video/reels/${r.f}.mp4" type="video/mp4"></video>${snd}</div>`;
+}
+function stillsRow(list, root) {
+  const one = list.map((s) => `<figure><img src="${root}assets/img/${s}.jpg" alt="" loading="lazy" width="800" height="1000"></figure>`).join('');
+  return one + one; // doubled for seamless loop
+}
+
 const dicts = {};
 for (const l of LOCALES) {
   dicts[l] = JSON.parse(fs.readFileSync(path.join(__dirname, 'locales', `${l}.json`), 'utf8'));
@@ -117,6 +168,20 @@ for (const locale of LOCALES) {
       .split('{{lang_banner}}').join(banner)
       .split('{{active_hotels}}').join(page.id === 'hotels' ? 'active' : '')
       .split('{{active_commerce}}').join(page.id === 'commerce' ? 'active' : '');
+
+    // media slots
+    if (html.includes('{{reel_tiles}}')) {
+      const list = page.vertical === 'hotels' ? REELS.filter((r) => r.v === 'hotel')
+        : page.vertical === 'commerce' ? REELS.filter((r) => r.v === 'brand')
+        : REELS;
+      html = html.split('{{reel_tiles}}').join(list.map((r) => reelTile(r, root, t)).join('\n'));
+    }
+    if (html.includes('{{stills_row1}}')) html = html.split('{{stills_row1}}').join(stillsRow(STILLS_HOTEL, root));
+    if (html.includes('{{stills_row2}}')) html = html.split('{{stills_row2}}').join(stillsRow(STILLS_HOME_2, root));
+    if (html.includes('{{stills_row}}')) {
+      const rows = page.vertical === 'commerce' ? STILLS_BRAND : STILLS_HOTEL;
+      html = html.split('{{stills_row}}').join(stillsRow(rows, root));
+    }
 
     // JSON-escaped strings (inside <script type="application/ld+json">)
     html = html.replace(/\{\{tj:([a-zA-Z0-9_.]+)\}\}/g, (_, key) => jsonEscape(t(key)));

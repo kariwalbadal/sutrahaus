@@ -7,7 +7,7 @@
   <meta name="description" content="{{t:PFX.desc}}">
   <link rel="canonical" href="{{canonical}}">
 {{alternates}}
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0f0d1c">
   <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-180.png">
   <link rel="apple-touch-icon" href="{{root}}assets/img/favicon-180.png">
   <meta property="og:type" content="website">
@@ -49,9 +49,7 @@
 <header class="site-head" id="top">
   <div class="wrap">
     <a href="{{root}}{{home_path}}" class="lockup" aria-label="Sutra Haus">
-      <img src="{{root}}assets/img/sutra-logo.png" alt="Sutra" width="1280" height="525">
-      <span class="haus">Haus</span>
-      <span class="wm-light">Sutra&nbsp;·&nbsp;Haus</span>
+      <span class="wm-light">Sutra<i>&nbsp;·&nbsp;</i>Haus</span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">{{t:common.menu}}</button>
     <nav class="nav">
@@ -67,7 +65,7 @@
 <section class="phero">
   <div class="wrap">
     <span class="label" data-reveal>{{t:PFX.eyebrow}}</span>
-    <h1 style="margin-top:26px" data-reveal>{{t:PFX.h1}}</h1>
+    <h1 style="margin-top:24px" data-reveal>{{t:PFX.h1}}</h1>
     <div class="p-row" data-reveal>
       <p>{{t:PFX.lede}}</p>
       <a class="tlink" href="#plans">{{t:PFX.hero_cta}} <span class="arr">↓</span></a>
@@ -81,6 +79,18 @@
     <div class="truth" data-reveal><span class="no">i</span><h3>{{t:PFX.t1}}</h3></div>
     <div class="truth" data-reveal><span class="no">ii</span><h3>{{t:PFX.t2}}</h3></div>
     <div class="truth" data-reveal><span class="no">iii</span><h3>{{t:PFX.t3}}</h3></div>
+  </div>
+</section>
+
+<section class="reelsec" id="reel">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>{{t:common.reel_h}}</h2>
+      <span class="label">{{t:common.reel_label}}</span>
+    </div>
+    <div class="reels">
+{{reel_tiles}}
+    </div>
   </div>
 </section>
 
@@ -123,75 +133,66 @@
   </div>
 </section>
 
+<section class="stillsec">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>{{t:common.stills_h}}</h2>
+      <span class="label">{{t:common.stills_label}}</span>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track">{{stills_row}}</div></div>
+</section>
+
 <section class="packs" id="plans">
   <div class="wrap">
-    <div class="packs-head" data-reveal>
-      <h2>{{t:common.packs_h}}</h2>
-      <div class="curr">
-        <label for="curr-select">{{t:common.currency_label}}</label>
-        <select id="curr-select" aria-label="Currency"></select>
-      </div>
-    </div>
+    <span class="label" data-reveal>{{t:common.packs_label}}</span>
+    <div class="packs-head" data-reveal><h2>{{t:common.packs_h}}</h2></div>
+    <p class="startline" data-reveal>{{t:PFX.startline}}</p>
     <div class="eng-grid" data-vertical="{{vertical}}">
       <div class="eng" data-reveal>
         <span class="no">01</span>
         <h3>The Rebuild</h3>
-        <p class="sub">{{t:PFX.e1_sub}}</p>
-        <p class="price">
-          <span class="from">{{t:common.starting_from}}</span>
-          <span class="amt" data-price="rebuild">—</span>
-          <span class="host">+ {{t:common.hosting_from}} <span data-price="hosting">—</span> {{t:common.per_month}}</span>
-        </p>
+        <p class="sub">{{t:common.plan1_sub}}</p>
         <ul>
-          <li class="lead">{{t:PFX.e1_l1}}</li>
-          <li>{{t:PFX.e1_l2}}</li>
-          <li>{{t:PFX.e1_l3}}</li>
-          <li>{{t:PFX.e1_l4}}</li>
+          <li class="lead">{{t:common.plan1_l1}}</li>
+          <li>{{t:common.plan1_l2}}</li>
+          <li>{{t:common.plan1_l3}}</li>
+          <li>{{t:common.plan1_l4}}</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Rebuild">{{t:common.begin}} <span class="arr">→</span></a>
       </div>
       <div class="eng" data-reveal>
         <span class="no">02</span>
         <h3>The Programme</h3>
-        <p class="sub">{{t:PFX.e2_sub}}</p>
-        <p class="price">
-          <span class="from">{{t:common.starting_from}}</span>
-          <span class="amt" data-price="programme">—</span><span class="per">{{t:common.per_month}}</span>
-        </p>
+        <p class="sub">{{t:common.plan2_sub}}</p>
         <ul>
-          <li class="lead">{{t:PFX.e2_l1}}</li>
-          <li>{{t:PFX.e2_l2}}</li>
-          <li>{{t:PFX.e2_l3}}</li>
-          <li>{{t:PFX.e2_l4}}</li>
+          <li class="lead">{{t:common.plan2_l1}}</li>
+          <li>{{t:common.plan2_l2}}</li>
+          <li>{{t:common.plan2_l3}}</li>
+          <li>{{t:common.plan2_l4}}</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Programme">{{t:common.begin}} <span class="arr">→</span></a>
       </div>
       <div class="eng" data-reveal>
         <span class="no">03</span>
         <h3>The Partnership</h3>
-        <p class="sub">{{t:PFX.e3_sub}}</p>
-        <p class="price">
-          <span class="from">{{t:common.starting_from}}</span>
-          <span class="amt" data-price="partnership">—</span><span class="per">{{t:common.per_month}}</span>
-        </p>
+        <p class="sub">{{t:common.plan3_sub}}</p>
         <ul>
-          <li class="lead">{{t:PFX.e3_l1}}</li>
-          <li>{{t:PFX.e3_l2}}</li>
-          <li>{{t:PFX.e3_l3}}</li>
-          <li>{{t:PFX.e3_l4}}</li>
+          <li class="lead">{{t:common.plan3_l1}}</li>
+          <li>{{t:common.plan3_l2}}</li>
+          <li>{{t:common.plan3_l3}}</li>
+          <li>{{t:common.plan3_l4}}</li>
         </ul>
         <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Partnership">{{t:common.begin}} <span class="arr">→</span></a>
       </div>
     </div>
-    <p class="fine" data-reveal>{{t:common.packs_fine}}</p>
+    <p class="fine" data-reveal>{{t:common.plans_fine}}</p>
   </div>
 </section>
 
 <section class="faq-sec" id="details">
   <div class="wrap">
-    <div class="wall-head" style="padding-top:clamp(60px,7vw,100px)" data-reveal>
-      <h2>{{t:common.faq_h}}</h2>
-    </div>
+    <h2 data-reveal>{{t:common.faq_h}}</h2>
     <div class="faq" data-reveal>
       <details><summary>{{t:PFX.q1}}</summary><p class="a">{{t:PFX.a1}}</p></details>
       <details><summary>{{t:PFX.q2}}</summary><p class="a">{{t:PFX.a2}}</p></details>
@@ -212,7 +213,7 @@
 
 <footer class="site-foot">
   <div class="wrap">
-    <a href="{{root}}{{home_path}}" class="fm">Sutra&nbsp;·&nbsp;Haus</a>
+    <a href="{{root}}{{home_path}}" class="fm">Sutra<i>&nbsp;·&nbsp;</i>Haus</a>
     <small>© 2026 Sutrahaus LLP — {{t:common.footer_line}}</small>
   </div>
 </footer>
