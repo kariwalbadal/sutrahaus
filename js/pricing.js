@@ -82,18 +82,23 @@
     });
   }
 
+  // testing override: ?cc=NZ (or any ISO country code) forces that market
+  var forced = null;
+  try { forced = new URLSearchParams(location.search).get('cc'); } catch (e) {}
+  if (forced && /^[A-Za-z]{2}$/.test(forced)) { render(forced.toUpperCase()); return; }
+
+  // render timezone/language fallback immediately, then refine with IP geo
   render(fallbackCountry());
 
-  var cached = null;
-  try { cached = sessionStorage.getItem('sh-geo'); } catch (e) {}
-  if (cached) { render(cached); return; }
+  function applyGeo(cc) { if (cc && /^[A-Z]{2}$/.test(cc)) render(cc); }
   fetch('https://get.geojs.io/v1/ip/country.json')
     .then(function (r) { return r.json(); })
-    .then(function (d) {
-      var cc = d && d.country;
-      if (!cc) return;
-      try { sessionStorage.setItem('sh-geo', cc); } catch (e) {}
-      render(cc);
-    })
-    .catch(function () {});
+    .then(function (d) { applyGeo(d && d.country); })
+    .catch(function () {
+      // secondary provider in case the first is blocked
+      fetch('https://api.country.is/')
+        .then(function (r) { return r.json(); })
+        .then(function (d) { applyGeo(d && d.country); })
+        .catch(function () { /* timezone fallback stays */ });
+    });
 })();
