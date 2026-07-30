@@ -28,6 +28,7 @@ const VERTICAL_CFG = {
     img_primary: 'assets/img/shots/glimpse-hotel-web.jpg',
     img_pair1: 'assets/img/shots/glimpse-hotel-web-2.jpg',
     img_pair2: 'assets/img/shots/chinmaye-inn-website-mobile.jpg',
+    band_media: '<video autoplay muted loop playsinline poster="{{root}}assets/video/hero-hotel-poster.jpg"><source src="{{root}}assets/video/hero-hotel.mp4" type="video/mp4"></video>',
     case_link: (t) => `mailto:badal@sutrahaus.com?subject=${t('common.folio_subject')}`,
     case_link_attrs: '',
     case_link_arr: '→',
@@ -36,6 +37,7 @@ const VERTICAL_CFG = {
     img_primary: 'assets/img/shots/glimpse-ecom-web.jpg',
     img_pair1: 'assets/img/shots/glimpse-ecom-cards.jpg',
     img_pair2: 'assets/img/shots/ephoria-store-mobile.jpg',
+    band_media: '<img src="{{root}}assets/img/ephoria/ephoria-lifestyle-photography-kitchen.jpg" alt="" width="1300" height="972">',
     case_link: () => 'https://ephoria.store',
     case_link_attrs: ' target="_blank" rel="noopener"',
     case_link_arr: '↗',
@@ -74,6 +76,7 @@ for (const locale of LOCALES) {
       html = html.split('PFX.').join(`${page.vertical}.`);
       const cfg = VERTICAL_CFG[page.vertical];
       html = html
+        .split('{{band_media}}').join(cfg.band_media)
         .split('{{img_primary}}').join(cfg.img_primary)
         .split('{{img_pair1}}').join(cfg.img_pair1)
         .split('{{img_pair2}}').join(cfg.img_pair2)
