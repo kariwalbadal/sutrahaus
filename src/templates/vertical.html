@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{t:PFX.title}}</title>
+  <meta name="description" content="{{t:PFX.desc}}">
+  <link rel="canonical" href="{{canonical}}">
+{{alternates}}
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-180.png">
+  <link rel="apple-touch-icon" href="{{root}}assets/img/favicon-180.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sutra Haus">
+  <meta property="og:title" content="{{t:PFX.title}}">
+  <meta property="og:description" content="{{t:PFX.desc}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="https://sutrahaus.com/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter+Tight:wght@300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{root}}css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "{{tj:PFX.svc_name}}",
+    "provider": { "@id": "https://sutrahaus.com/#org", "@type": "ProfessionalService", "name": "Sutra Haus", "legalName": "Sutrahaus LLP", "email": "badal@sutrahaus.com" },
+    "areaServed": "Worldwide",
+    "description": "{{tj:PFX.desc}}"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "{{tj:PFX.q1}}", "acceptedAnswer": { "@type": "Answer", "text": "{{tj:PFX.a1}}" } },
+      { "@type": "Question", "name": "{{tj:PFX.q2}}", "acceptedAnswer": { "@type": "Answer", "text": "{{tj:PFX.a2}}" } },
+      { "@type": "Question", "name": "{{tj:PFX.q3}}", "acceptedAnswer": { "@type": "Answer", "text": "{{tj:PFX.a3}}" } },
+      { "@type": "Question", "name": "{{tj:PFX.q4}}", "acceptedAnswer": { "@type": "Answer", "text": "{{tj:PFX.a4}}" } },
+      { "@type": "Question", "name": "{{tj:PFX.q5}}", "acceptedAnswer": { "@type": "Answer", "text": "{{tj:PFX.a5}}" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-head" id="top">
+  <div class="wrap">
+    <a href="{{root}}{{home_path}}" class="lockup" aria-label="Sutra Haus">
+      <img src="{{root}}assets/img/sutra-logo.png" alt="Sutra" width="1280" height="525">
+      <span class="haus">Haus</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">{{t:common.menu}}</button>
+    <nav class="nav">
+      <a href="{{hotels_href}}" class="{{active_hotels}}">{{t:common.nav_hotels}}</a>
+      <a href="{{commerce_href}}" class="{{active_commerce}}">{{t:common.nav_commerce}}</a>
+      <a href="{{root}}{{home_path}}#studio">{{t:common.nav_studio}}</a>
+      <a class="enquire" href="mailto:badal@sutrahaus.com?subject={{t:common.mail_subject}}">{{t:common.enquire}}</a>
+      <span class="lang"><select aria-label="Language" onchange="location.href=this.value">{{lang_options}}</select></span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="label" data-reveal>{{t:PFX.eyebrow}}</span>
+    <h1 data-reveal>{{t:PFX.h1}}</h1>
+    <div class="hero-foot" data-reveal>
+      <p>{{t:PFX.lede}}</p>
+      <a class="tlink" href="#engagements">{{t:PFX.hero_cta}} <span class="arr">↓</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:clamp(60px,7vw,100px)">
+  <div class="wrap">
+    <div class="truths">
+      <div class="truth" data-reveal><span class="no">i</span><h3>{{t:PFX.t1_h}}</h3><p>{{t:PFX.t1_p}}</p></div>
+      <div class="truth" data-reveal><span class="no">ii</span><h3>{{t:PFX.t2_h}}</h3><p>{{t:PFX.t2_p}}</p></div>
+      <div class="truth" data-reveal><span class="no">iii</span><h3>{{t:PFX.t3_h}}</h3><p>{{t:PFX.t3_p}}</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap relief">
+    <div class="lead-col" data-reveal>
+      <span class="label" style="display:block;margin-bottom:20px">{{t:PFX.relief_label}}</span>
+      <h2>{{t:PFX.relief_h}}</h2>
+      <p>{{t:PFX.relief_p}}</p>
+    </div>
+    <ul>
+      <li data-reveal><span class="no">01</span><div><h3>{{t:PFX.r1_h}}</h3><p>{{t:PFX.r1_p}}</p></div></li>
+      <li data-reveal><span class="no">02</span><div><h3>{{t:PFX.r2_h}}</h3><p>{{t:PFX.r2_p}}</p></div></li>
+      <li data-reveal><span class="no">03</span><div><h3>{{t:PFX.r3_h}}</h3><p>{{t:PFX.r3_p}}</p></div></li>
+      <li data-reveal><span class="no">04</span><div><h3>{{t:PFX.r4_h}}</h3><p>{{t:PFX.r4_p}}</p></div></li>
+      <li data-reveal><span class="no">05</span><div><h3>{{t:PFX.r5_h}}</h3><p>{{t:PFX.r5_p}}</p></div></li>
+      <li data-reveal><span class="no">06</span><div><h3>{{t:PFX.r6_h}}</h3><p>{{t:PFX.r6_p}}</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" id="work">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>{{t:PFX.work_h}}</h2>
+      <span class="label">{{t:common.excerpt_label}}</span>
+    </div>
+    <div class="work-row">
+      <div class="w-media">
+        <figure class="primary" data-reveal><img src="{{root}}{{img_primary}}" alt="{{t:PFX.img_primary_alt}}" width="1400" height="1071"></figure>
+        <div class="pair">
+          <figure data-reveal><img src="{{root}}{{img_pair1}}" alt="{{t:PFX.img_pair1_alt}}" loading="lazy" width="1400" height="958"></figure>
+          <figure data-reveal><img src="{{root}}{{img_pair2}}" alt="{{t:PFX.img_pair2_alt}}" loading="lazy" width="700" height="1516"></figure>
+        </div>
+      </div>
+      <div class="w-text" data-reveal>
+        <span class="label">{{t:PFX.case_label}}</span>
+        <h3>{{t:PFX.case_h}}</h3>
+        <p>{{t:PFX.case_p1}}</p>
+        <p>{{t:PFX.case_p2}}</p>
+        <ul class="scope">
+          <li><b>{{t:PFX.s1_k}}</b><span>{{t:PFX.s1_v}}</span></li>
+          <li><b>{{t:PFX.s2_k}}</b><span>{{t:PFX.s2_v}}</span></li>
+          <li><b>{{t:PFX.s3_k}}</b><span>{{t:PFX.s3_v}}</span></li>
+          <li><b>{{t:PFX.s4_k}}</b><span>{{t:PFX.s4_v}}</span></li>
+        </ul>
+        <a class="tlink" href="{{case_link}}"{{case_link_attrs}}>{{t:PFX.case_cta}} <span class="arr">{{case_link_arr}}</span></a>
+      </div>
+    </div>
+    <div class="work-note" data-reveal>
+      <p>{{t:common.folio_note}}</p>
+      <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.folio_subject}}">{{t:common.folio_cta}} <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" id="engagements">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>{{t:common.eng_h}}</h2>
+      <span class="label">{{t:common.eng_label}}</span>
+    </div>
+    <div class="pricing-bar" data-reveal>
+      <p class="note">{{t:common.pricing_note}}</p>
+      <div class="curr">
+        <label for="curr-select">{{t:common.currency_label}}</label>
+        <select id="curr-select" aria-label="Currency"></select>
+      </div>
+    </div>
+    <div class="eng-grid" data-vertical="{{vertical}}">
+      <div class="eng" data-reveal>
+        <span class="no">01</span>
+        <h3>The Rebuild</h3>
+        <p class="sub">{{t:PFX.e1_sub}}</p>
+        <p class="price"><span class="from">{{t:common.starting_from}}</span><span class="amt" data-price="rebuild">—</span></p>
+        <ul>
+          <li class="lead">{{t:PFX.e1_l1}}</li>
+          <li>{{t:PFX.e1_l2}}</li>
+          <li>{{t:PFX.e1_l3}}</li>
+          <li>{{t:PFX.e1_l4}}</li>
+          <li>{{t:PFX.e1_l5}}</li>
+        </ul>
+        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Rebuild">{{t:common.begin}} <span class="arr">→</span></a>
+      </div>
+      <div class="eng" data-reveal>
+        <span class="no">02</span>
+        <h3>The Programme</h3>
+        <p class="sub">{{t:PFX.e2_sub}}</p>
+        <p class="price"><span class="from">{{t:common.starting_from}}</span><span class="amt" data-price="programme">—</span><span class="per">{{t:common.per_month}}</span></p>
+        <ul>
+          <li class="lead">{{t:PFX.e2_l1}}</li>
+          <li>{{t:PFX.e2_l2}}</li>
+          <li>{{t:PFX.e2_l3}}</li>
+          <li>{{t:PFX.e2_l4}}</li>
+          <li>{{t:PFX.e2_l5}}</li>
+        </ul>
+        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Programme">{{t:common.begin}} <span class="arr">→</span></a>
+      </div>
+      <div class="eng" data-reveal>
+        <span class="no">03</span>
+        <h3>The Partnership</h3>
+        <p class="sub">{{t:PFX.e3_sub}}</p>
+        <p class="price"><span class="from">{{t:common.starting_from}}</span><span class="amt" data-price="partnership">—</span><span class="per">{{t:common.per_month}}</span></p>
+        <ul>
+          <li class="lead">{{t:PFX.e3_l1}}</li>
+          <li>{{t:PFX.e3_l2}}</li>
+          <li>{{t:PFX.e3_l3}}</li>
+          <li>{{t:PFX.e3_l4}}</li>
+          <li>{{t:PFX.e3_l5}}</li>
+        </ul>
+        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Partnership">{{t:common.begin}} <span class="arr">→</span></a>
+      </div>
+    </div>
+    <p class="eng-note" data-reveal>{{t:common.eng_note}}</p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" id="details">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <h2>{{t:common.faq_h}}</h2>
+      <span class="label">{{t:common.faq_label}}</span>
+    </div>
+    <div class="faq" data-reveal>
+      <details><summary>{{t:PFX.q1}}</summary><p class="a">{{t:PFX.a1}}</p></details>
+      <details><summary>{{t:PFX.q2}}</summary><p class="a">{{t:PFX.a2}}</p></details>
+      <details><summary>{{t:PFX.q3}}</summary><p class="a">{{t:PFX.a3}}</p></details>
+      <details><summary>{{t:PFX.q4}}</summary><p class="a">{{t:PFX.a4}}</p></details>
+      <details><summary>{{t:PFX.q5}}</summary><p class="a">{{t:PFX.a5}}</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap inner">
+    <span class="label" data-reveal>{{t:common.contact_label}}</span>
+    <h2 data-reveal>{{t:PFX.contact_h}}</h2>
+    <a class="mail" href="mailto:badal@sutrahaus.com" data-reveal>badal@sutrahaus.com</a>
+    <p class="fine" data-reveal>{{t:common.contact_fine}}</p>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <a href="{{root}}{{home_path}}" class="fm">Sutra&nbsp;·&nbsp;Haus</a>
+    <small>© 2026 Sutrahaus LLP — {{t:common.footer_line}}</small>
+  </div>
+</footer>
+
+{{lang_banner}}
+<script src="{{root}}js/main.js" defer></script>
+<script src="{{root}}js/pricing.js" defer></script>
+</body>
+</html>

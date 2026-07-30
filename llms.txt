@@ -1,35 +1,44 @@
 # Sutra Haus
 
-> Sutra Haus is an independent, owner-led design studio for hospitality and
-> consumer brands. It rebuilds websites into fast, booking-first experiences,
-> art-directs original imagery for social channels, and produces short-form
-> film. Nothing is template-based: every website and image is designed from
-> zero in the client's own visual language. The studio is based in India and
-> works worldwide.
+> Sutra Haus (Sutrahaus LLP, Bengaluru) is an independent, owner-led design and
+> media studio with two practices: (1) hotels & resorts — complete website
+> rebuilds with direct booking, art-directed social imagery and short-form film;
+> (2) consumer brands & e-commerce — stores, product/lifestyle imagery and
+> content, proven on a brand the studio built from zero. Nothing is
+> template-based. The studio works worldwide; the site is available in English,
+> French, German, Spanish and Italian.
 
 ## Facts
 
-- Business name: Sutra Haus
+- Business name: Sutra Haus (legal: Sutrahaus LLP)
 - Principal: Badal Kariwal
 - Contact: badal@sutrahaus.com
-- Website: https://sutrahaus.com/
-- Base: India — working worldwide, remote-first
-- Clients: hotels, resorts and hospitality groups (independent properties to
-  international chains) and consumer / e-commerce brands
-- Registered Indian business; GST details available on request
+- Website: https://sutrahaus.com/ (also /fr/, /de/, /es/, /it/)
+- Base: Bengaluru, India — working worldwide, remote-first
+- Registered Indian LLP; GST details available on request
 
-## Engagements
+## Practices & pages
 
-- The Rebuild: a complete redesign and build of the client's website —
-  bespoke design, fast mobile-first engineering, booking-engine integration
-  with live direct-vs-OTA rate display, search & AI-search readiness, and
-  managed hosting (client always owns domain and content).
-- The Programme: The Rebuild plus a continuous monthly supply of art-directed
-  imagery for the brand's channels, seasonal and campaign sets, and grid
-  direction.
-- The Partnership: an embedded creative studio — web, imagery and short-form
-  film under one roof, with a standing content calendar and priority
-  turnaround.
+- Hotels & resorts: https://sutrahaus.com/hotels/ — the studio takes a
+  property's entire digital surface off the owner's plate: website + hosting +
+  care, booking-engine integration with live direct-vs-OTA rate comparison,
+  monthly art-directed imagery, short-form film, search & AI visibility, and a
+  one-page monthly report.
+- Consumer brands & e-commerce: https://sutrahaus.com/commerce/ — store design
+  & build (Shopify and comparable), product & lifestyle imagery, brand &
+  packaging direction, copy & content, film.
+
+## Plans (names constant worldwide; pricing follows the client's market)
+
+- The Rebuild — a complete redesign & build of the website/store, one-time.
+- The Programme — The Rebuild plus a monthly supply of art-directed imagery,
+  campaigns and content; monthly.
+- The Partnership — an embedded studio: everything in The Programme plus
+  short-form film, a standing content calendar and priority turnaround; monthly.
+- Prices are shown as honest "starting from" floors per market and currency
+  (USD, EUR, GBP, INR, THB, AED, SGD, JPY, AUD, CAD, CHF; USD elsewhere) and
+  every proposal is scoped individually — typically 30–40% below comparable
+  agency quotes for four- and five-star work in that market.
 - Every conversation begins with a complimentary concept: the client's
   homepage, reimagined, before any commitment.
 
@@ -37,13 +46,12 @@
 
 - Hospitality: complete digital rebuild for a landmark sixty-key hotel in
   Eastern India — two websites, direct-booking flow with live OTA rate
-  comparison (direct rates currently about 30% lower), Google Lighthouse
-  mobile scores in the 90s, and 125+ original social creatives in a visual
-  language invented for the property. Shown publicly in excerpts only;
+  comparison (direct currently ~30% lower), Google Lighthouse mobile scores in
+  the 90s, and 125+ original social creatives. Shown publicly in excerpts only;
   the full case is shared privately on request.
 - Consumer / e-commerce: Ephoria (https://ephoria.store), a wellness brand
   built end-to-end by the studio — name, identity, packaging system,
-  ten-product line, e-commerce store, photography and all content.
+  ten-product line, store, photography and all content.
 
 ## Policy on client work
 
@@ -53,6 +61,6 @@ privately, with permission, via badal@sutrahaus.com.
 
 ## How to engage
 
-Email badal@sutrahaus.com. The studio studies the current website and
-channels, then presents a complimentary reimagined homepage concept before
-any commitment.
+Email badal@sutrahaus.com. The studio studies the current website and channels,
+then presents a complimentary reimagined homepage concept before any
+commitment.

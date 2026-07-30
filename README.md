@@ -1,13 +1,18 @@
 # Sutra Haus — sutrahaus.com
 
-Independent design studio for hotels & modern brands.
-Static site (no build step): hand-written HTML + one CSS file + vanilla JS.
+Independent design & media studio (Sutrahaus LLP, Bengaluru). Two practices:
+hotels (`/hotels/`) and consumer brands / e-commerce (`/commerce/`).
+Localized: EN (root) + FR/DE/ES/IT (`/fr/`, `/de/`, `/es/`, `/it/`).
 
-- `index.html` — single-page site (work excerpts, capabilities, engagements, studio, contact)
-- `assets/img/` — optimized work excerpts (client work shown as glimpses only — no full sites)
-- `llms.txt`, `sitemap.xml`, `robots.txt` — SEO / AI-search
-- `tools/og.html` — source for the social-share card
+## Editing
 
-Deploy: GitHub Pages (push to `main` = deploy). To connect the custom domain,
-add a `CNAME` file containing `sutrahaus.com` and point DNS (A records to GitHub
-Pages IPs, or CNAME `www` → `kariwalbadal.github.io`).
+- Copy lives in `src/locales/*.json`; page structure in `src/templates/`.
+- Rebuild all 15 pages + sitemap: `node src/build.js` (no dependencies).
+- "Starting from" pricing floors per currency: edit the PRICING table at the
+  top of `js/pricing.js`. Currency auto-detects from the visitor's timezone /
+  language (EUR for Europe, GBP, INR, THB, AED, SGD, JPY, AUD, CAD, CHF; USD
+  elsewhere) with a manual switcher; plan names stay constant worldwide.
+- Client work policy: excerpts only, no full-site screenshots, no client links.
+
+Deploy: GitHub Pages (push to `main`). To connect sutrahaus.com: add a `CNAME`
+file and point DNS.

@@ -33,4 +33,22 @@
   } else {
     revealed.forEach(function (el) { el.classList.add('in'); });
   }
+
+  // suggest a translated page on English pages, once
+  var banner = document.querySelector('.lang-banner');
+  if (banner) {
+    var dismissed = false;
+    try { dismissed = localStorage.getItem('sh-lang-dismissed') === '1'; } catch (e) {}
+    var lang = ((navigator.language || '').slice(0, 2) || '').toLowerCase();
+    var href = banner.getAttribute('data-' + lang);
+    var label = banner.getAttribute('data-' + lang + '-label');
+    if (!dismissed && href && label) {
+      banner.querySelector('.lb-slot').innerHTML = '<a href="' + href + '">' + label + ' →</a>';
+      banner.classList.add('show');
+      banner.querySelector('.lb-close').addEventListener('click', function () {
+        banner.classList.remove('show');
+        try { localStorage.setItem('sh-lang-dismissed', '1'); } catch (e) {}
+      });
+    }
+  }
 })();
