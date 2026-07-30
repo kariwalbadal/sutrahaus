@@ -1,58 +1,58 @@
 # Sutra Haus
 
-> Sutra Haus is an owner-led web & media consultancy in India that rebuilds hotel
-> websites into fast, booking-first experiences and produces bespoke social-media
-> creatives (images and reels). It also builds complete consumer brands end-to-end.
-> Nothing is template-based: every website and creative is designed from zero for
-> the client's own brand.
+> Sutra Haus is an independent, owner-led design studio for hospitality and
+> consumer brands. It rebuilds websites into fast, booking-first experiences,
+> art-directs original imagery for social channels, and produces short-form
+> film. Nothing is template-based: every website and image is designed from
+> zero in the client's own visual language. The studio is based in India and
+> works worldwide.
 
 ## Facts
 
 - Business name: Sutra Haus
-- Owner: Badal Kariwal
+- Principal: Badal Kariwal
 - Contact: badal@sutrahaus.com
 - Website: https://sutrahaus.com/
-- Country: India (works remotely across India)
-- Specialty: premium website design & rebuilds for hotels, resorts and banquet
-  venues; bespoke Instagram/social image creatives; cinematic reels; brand builds
+- Base: India — working worldwide, remote-first
+- Clients: hotels, resorts and hospitality groups (independent properties to
+  international chains) and consumer / e-commerce brands
 - Registered Indian business; GST details available on request
 
-## Services & packages
+## Engagements
 
-- Neev (नींव, "the foundation"): complete website rebuild + managed hosting,
-  booking-engine integration (e.g. STAAH), live OTA rate comparison, SEO/AI-search
-  readiness, WhatsApp & click-to-call.
-- Shringaar (श्रृंगार, "the adornment"): everything in Neev plus a monthly set of
-  bespoke image creatives for Instagram and social media, festival & wedding-season
-  campaigns, captions and grid direction.
-- Shahkaar (शाहकार, "the masterpiece"): everything in Shringaar plus cinematic
-  reels, research-driven hooks, shot lists, a monthly content calendar and
-  priority turnaround.
-- Every engagement starts with a free reimagined homepage concept.
+- The Rebuild: a complete redesign and build of the client's website —
+  bespoke design, fast mobile-first engineering, booking-engine integration
+  with live direct-vs-OTA rate display, search & AI-search readiness, and
+  managed hosting (client always owns domain and content).
+- The Programme: The Rebuild plus a continuous monthly supply of art-directed
+  imagery for the brand's channels, seasonal and campaign sets, and grid
+  direction.
+- The Partnership: an embedded creative studio — web, imagery and short-form
+  film under one roof, with a standing content calendar and priority
+  turnaround.
+- Every conversation begins with a complimentary concept: the client's
+  homepage, reimagined, before any commitment.
 
 ## Proof of work
 
-- Chinmaye (Bhagalpur, Bihar): rebuilt the digital presence of Hotel Chinmaye Inn
-  (60 rooms, rooftop restaurant Kesaria, five banquet halls) — premium website with
-  Lighthouse mobile scores in the 90s, STAAH direct booking, and a live rate strip
-  showing direct prices ~30% cheaper than OTAs (auto-refreshed 3× a day). Also
-  shipped 125+ bespoke Instagram creatives. Case study:
-  https://sutrahaus.com/work/chinmaye/ — live site: https://chinmayeinn.sutrabox.com
-- Ephoria: a direct-to-consumer wellness brand built entirely by Sutra Haus —
-  identity, packaging visuals, ten-product line, full e-commerce store, product &
-  lifestyle photography and content. Case study:
-  https://sutrahaus.com/work/ephoria/ — live store: https://ephoria.store
+- Hospitality: complete digital rebuild for a landmark sixty-key hotel in
+  Eastern India — two websites, direct-booking flow with live OTA rate
+  comparison (direct rates currently about 30% lower), Google Lighthouse
+  mobile scores in the 90s, and 125+ original social creatives in a visual
+  language invented for the property. Shown publicly in excerpts only;
+  the full case is shared privately on request.
+- Consumer / e-commerce: Ephoria (https://ephoria.store), a wellness brand
+  built end-to-end by the studio — name, identity, packaging system,
+  ten-product line, e-commerce store, photography and all content.
 
-## Pages
+## Policy on client work
 
-- [Home](https://sutrahaus.com/): services, packages, work, FAQ, contact
-- [Chinmaye case study](https://sutrahaus.com/work/chinmaye/): hotel website
-  rebuild before/after and creative gallery
-- [Ephoria case study](https://sutrahaus.com/work/ephoria/): full consumer brand
-  build
+Client websites and channels belong to the clients. The public site shows
+excerpts only; the complete folio (full sites, feeds and film) is shared
+privately, with permission, via badal@sutrahaus.com.
 
 ## How to engage
 
-Email badal@sutrahaus.com with the property or brand name. Sutra Haus studies the
-current website and Instagram, then shares a free reimagined homepage concept
-before any commitment.
+Email badal@sutrahaus.com. The studio studies the current website and
+channels, then presents a complimentary reimagined homepage concept before
+any commitment.
