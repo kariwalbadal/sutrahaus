@@ -131,6 +131,7 @@ function altFor(s) {
   return `${ALT_PREFIX[dir] || 'Creative'} — ${label}`;
 }
 function stillsRow(list, root) {
+  while (list.length && list.length < 10) list = list.concat(list);
   const one = list.map((s) => {
     const src = s.startsWith('poster/')
       ? `${root}${POSTER_DIR}${s.slice(7)}-poster.jpg`
@@ -222,9 +223,10 @@ for (const locale of LOCALES) {
 
     // media slots
     if (html.includes('{{reel_tiles}}')) {
-      const list = page.vertical === 'hotels' ? REELS.filter((r) => r.v === 'hotel')
+      let list = page.vertical === 'hotels' ? REELS.filter((r) => r.v === 'hotel').slice(0, 3)
         : page.vertical === 'commerce' ? REELS.filter((r) => r.v === 'brand')
-        : REELS;
+        : REELS.filter((r, i) => r.real || i % 2 === 0).slice(0, 8);
+      if (page.vertical === 'commerce') list = list.filter((r, i) => r.real || i < 4);
       html = html.split('{{reel_tiles}}').join(list.map((r) => reelTile(r, root, t)).join('\n'));
     }
     const isStock = (x) => x.startsWith('stock/');
