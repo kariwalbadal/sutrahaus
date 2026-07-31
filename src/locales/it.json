@@ -203,5 +203,13 @@
   "common.f_biz": "Nome dell'hotel o del brand",
   "common.f_need": "Di cosa avete bisogno?",
   "common.f_send": "Inviare la richiesta",
-  "common.f_note": "Apre la vostra e-mail con tutto precompilato."
+  "common.f_note": "Apre la vostra e-mail con tutto precompilato.",
+  "common.f_email": "La vostra e-mail",
+  "common.f_sent": "Apertura della vostra e-mail — o scrivete a badal@sutrahaus.com.",
+  "common.feat": "Il più scelto",
+  "common.per_month_lbl": "/ mese, a partire da",
+  "common.row_real": "Dai nostri brand — lavoro reale, consegnato",
+  "common.row_direction": "Direzione & atmosfere — ciò che possiamo creare per il vostro",
+  "common.chip_client": "Adv cliente",
+  "common.chip_direction": "Direzione"
 }

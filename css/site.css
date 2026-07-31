@@ -461,3 +461,53 @@ body.loaded .vhero .label, body.loaded .vhero .vh-row { opacity: 1; transform: n
 @media (max-width: 980px) {
   [data-plx] > img, [data-plx] > video { transform: none; }
 }
+
+
+/* ============================================================
+   v8.1 — review round 1 fixes
+   ============================================================ */
+.btn-solid, .btn-glass {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase; white-space: nowrap;
+  padding: 15px 26px; border-radius: 999px; cursor: pointer; border: 1px solid transparent;
+  transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.3s var(--ease);
+}
+.btn-solid { background: var(--flame); color: #fff; }
+.btn-solid:hover { background: #d95f47; transform: translateY(-1px); }
+.btn-glass {
+  background: rgba(255, 255, 255, 0.1); color: #fff; border-color: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.btn-glass:hover { background: rgba(255, 255, 255, 0.22); }
+.cform button.btn-solid { appearance: none; -webkit-appearance: none; }
+.vhero .vh-links { display: flex; flex-wrap: wrap; gap: 12px; row-gap: 12px; }
+
+/* char-stagger hero heading */
+.vhero h1 .ch { display: inline-block; opacity: 0; transform: translateX(-18px); transition: opacity 0.5s var(--ease), transform 0.5s var(--ease); }
+body.loaded .vhero h1 .ch { opacity: 1; transform: translateX(0); }
+@media (prefers-reduced-motion: reduce) { .vhero h1 .ch { opacity: 1 !important; transform: none !important; transition: none; } }
+
+/* header: contrast + filled CTA */
+.site-head .wrap { background: rgba(15, 13, 28, 0.62); }
+.site-head.scrolled .wrap { background: rgba(15, 13, 28, 0.85); }
+.nav a { color: #fff; }
+.head-cta { background: var(--flame); color: #fff; border: none; padding: 9px 18px; border-radius: 999px; }
+.head-cta:hover { background: #d95f47; color: #fff; }
+
+/* portfolio crops: stop slicing words */
+.w-media .pair img { aspect-ratio: 3 / 2; }
+
+/* plans: featured card + solid CTAs */
+.eng.featured { border-top: 3px solid var(--flame); position: relative; }
+.eng.featured .feat { position: absolute; top: -12px; left: 26px; background: var(--flame); color: #fff; font-size: 9.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; }
+.eng .price-line { font-family: var(--serif); font-size: 1.25rem; font-weight: 420; margin: 0 0 16px; }
+.eng .price-line small { font-family: var(--sans); font-size: 11px; color: var(--paper-grey); letter-spacing: 0.06em; }
+.eng .btn-solid { align-self: flex-start; margin-top: 22px; }
+
+/* stills honesty labels */
+.row-label { display: block; margin: 18px 0 10px; }
+.marquee-real { margin-bottom: 4px; }
+
+/* reveal: shorter hold */
+.reveal { height: 110vh; }

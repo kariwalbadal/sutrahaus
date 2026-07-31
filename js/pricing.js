@@ -6,7 +6,9 @@
 (function () {
   var BASE = {
     hotels:   { INR: 3500,  USD: 150, EUR: 140, GBP: 120, THB: 4900, AED: 550,  SGD: 200, JPY: 22000, AUD: 230, CAD: 200, CHF: 150, PLN: 590 },
-    commerce: { INR: 10000, USD: 300, EUR: 280, GBP: 240, THB: 9900, AED: 1100, SGD: 400, JPY: 44000, AUD: 450, CAD: 400, CHF: 290, PLN: 1190 }
+    commerce: { INR: 10000, USD: 300, EUR: 280, GBP: 240, THB: 9900, AED: 1100, SGD: 400, JPY: 44000, AUD: 450, CAD: 400, CHF: 290, PLN: 1190 },
+    programme:   { INR: 5000,  USD: 50,  EUR: 45,  GBP: 40,  THB: 1690, AED: 180, SGD: 70,  JPY: 7500,  AUD: 75,  CAD: 70,  CHF: 50,  PLN: 199 },
+    partnership: { INR: 10000, USD: 150, EUR: 140, GBP: 120, THB: 4900, AED: 550, SGD: 200, JPY: 22000, AUD: 220, CAD: 200, CHF: 150, PLN: 590 }
   };
   // explicit per-country floors (currency + amounts), tuned to local agency markets
   var COUNTRY = {
@@ -48,7 +50,8 @@
   };
 
   var els = document.querySelectorAll('[data-startprice]');
-  if (!els.length) return;
+  var monthlyEls = document.querySelectorAll('[data-startprice-monthly]');
+  if (!els.length && !monthlyEls.length) return;
 
   function fallbackCountry() {
     try {
@@ -79,6 +82,17 @@
       } catch (e) {
         el.textContent = cur + ' ' + amount;
       }
+    });
+    monthlyEls.forEach(function (el) {
+      var tier = el.getAttribute('data-startprice-monthly');
+      var amount = BASE[tier] && (BASE[tier][cur] != null ? BASE[tier][cur] : BASE[tier].USD);
+      if (amount == null) return;
+      var useCur = BASE[tier][cur] != null ? cur : 'USD';
+      try {
+        el.textContent = new Intl.NumberFormat(document.documentElement.lang || 'en', {
+          style: 'currency', currency: useCur, maximumFractionDigits: 0
+        }).format(amount);
+      } catch (e) { el.textContent = useCur + ' ' + amount; }
     });
   }
 

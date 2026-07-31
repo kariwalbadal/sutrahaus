@@ -50,11 +50,11 @@ const VERTICAL_CFG = {
 
 const REELS = [
   { f: 'hotel-pool', v: 'hotel' },
-  { f: 'brand-ephoria-1', v: 'brand', audio: true },
+  { f: 'brand-ephoria-1', v: 'brand', audio: true, real: true },
   { f: 'hotel-suite', v: 'hotel' },
   { f: 'brand-perfume', v: 'brand' },
   { f: 'hotel-view', v: 'hotel' },
-  { f: 'brand-ephoria-2', v: 'brand', audio: true },
+  { f: 'brand-ephoria-2', v: 'brand', audio: true, real: true },
   { f: 'hotel-spa', v: 'hotel' },
   { f: 'brand-editorial', v: 'brand' },
   { f: 'hotel-dining', v: 'hotel' },
@@ -98,7 +98,10 @@ const STILLS_HOME_2 = [
 ];
 
 function reelTile(r, root, t) {
-  const chip = r.v === 'hotel' ? `<span class="chip hotel">${t('common.chip_hotel')}</span>` : `<span class="chip brand">${t('common.chip_brand')}</span>`;
+  const kind = r.real ? t('common.chip_client') : t('common.chip_direction');
+  const chip = r.v === 'hotel'
+    ? `<span class="chip hotel">${t('common.chip_hotel')} · ${kind}</span>`
+    : `<span class="chip brand">${t('common.chip_brand')} · ${kind}</span>`;
   const audio = r.audio ? ' data-audio="1"' : '';
   const snd = r.audio ? '<button class="snd" aria-label="Sound">♪</button>' : '';
   return `      <div class="reel"${audio}>${chip}<video muted loop playsinline preload="metadata" poster="${root}assets/video/reels/${r.f}-poster.jpg"><source src="${root}assets/video/reels/${r.f}.mp4" type="video/mp4"></video>${snd}</div>`;
@@ -200,11 +203,15 @@ for (const locale of LOCALES) {
         : REELS;
       html = html.split('{{reel_tiles}}').join(list.map((r) => reelTile(r, root, t)).join('\n'));
     }
-    if (html.includes('{{stills_row1}}')) html = html.split('{{stills_row1}}').join(stillsRow(STILLS_HOTEL, root));
-    if (html.includes('{{stills_row2}}')) html = html.split('{{stills_row2}}').join(stillsRow(STILLS_HOME_2, root));
-    if (html.includes('{{stills_row}}')) {
-      const rows = page.vertical === 'commerce' ? STILLS_BRAND : STILLS_HOTEL;
-      html = html.split('{{stills_row}}').join(stillsRow(rows, root));
+    const isStock = (x) => x.startsWith('stock/');
+    if (html.includes('{{stills_row_real}}')) {
+      const pool = page.vertical === 'commerce' ? STILLS_BRAND
+        : page.vertical === 'hotels' ? STILLS_HOTEL
+        : STILLS_HOTEL.concat(STILLS_BRAND);
+      const real = pool.filter((x) => !isStock(x));
+      const stock = pool.filter(isStock);
+      html = html.split('{{stills_row_real}}').join(stillsRow(real, root));
+      html = html.split('{{stills_row_stock}}').join(stillsRow(stock, root));
     }
 
     // JSON-escaped strings (inside <script type="application/ld+json">)

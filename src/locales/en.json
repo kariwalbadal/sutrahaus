@@ -203,5 +203,13 @@
   "common.f_biz": "Hotel or brand name",
   "common.f_need": "What do you need?",
   "common.f_send": "Send enquiry",
-  "common.f_note": "Opens your email app with everything pre-filled."
+  "common.f_note": "Opens your email app with everything pre-filled.",
+  "common.f_email": "Your email",
+  "common.f_sent": "Opening your email app — or write to badal@sutrahaus.com directly.",
+  "common.feat": "Most chosen",
+  "common.per_month_lbl": "/ month, starting from",
+  "common.row_real": "From our brands — real, shipped work",
+  "common.row_direction": "Direction & moods — what we can build for yours",
+  "common.chip_client": "Client ad",
+  "common.chip_direction": "Direction"
 }

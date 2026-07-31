@@ -127,7 +127,7 @@
 
   /* ---------- reveal-on-scroll + heading masks + counters ---------- */
   var revealed = document.querySelectorAll('[data-reveal]');
-  var lnHeads = document.querySelectorAll('.phero h1');
+  var lnHeads = document.querySelectorAll('.phero h1, .rv-state h2');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -255,7 +255,9 @@
       e.preventDefault();
       var g = function (n) { return (form.querySelector('[name=' + n + ']') || {}).value || '—'; };
       var subject = encodeURIComponent('Enquiry — ' + g('cbiz'));
-      var body = encodeURIComponent('Name: ' + g('cname') + '\nHotel / brand: ' + g('cbiz') + '\nWhat we need: ' + g('cneed') + '\n\n(Sent from sutrahaus site)');
+      var body = encodeURIComponent('Name: ' + g('cname') + '\nEmail: ' + g('cemail') + '\nHotel / brand: ' + g('cbiz') + '\nWhat we need: ' + g('cneed') + '\n\n(Sent from the Sutra Haus site)');
+      var note = form.querySelector('.cform-note');
+      if (note) note.textContent = note.getAttribute('data-sent') || note.textContent;
       window.location.href = 'mailto:badal@sutrahaus.com?subject=' + subject + '&body=' + body;
     });
   });

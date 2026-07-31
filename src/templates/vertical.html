@@ -26,7 +26,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "{{tj:PFX.svc_name}}",
-    "provider": { "@id": "https://sutrahaus.com/#org", "@type": "ProfessionalService", "name": "Sutra Haus", "legalName": "Sutrahaus LLP", "email": "badal@sutrahaus.com" },
+    "provider": { "@id": "https://kariwalbadal.github.io/sutrahaus/#org", "@type": "ProfessionalService", "name": "Sutra Haus", "legalName": "Sutrahaus LLP", "email": "badal@sutrahaus.com" },
     "areaServed": "Worldwide",
     "description": "{{tj:PFX.desc}}"
   }
@@ -146,7 +146,10 @@
       <span class="label">{{t:common.stills_label}}</span>
     </div>
   </div>
-  <div class="marquee" aria-hidden="true"><div class="marquee-track">{{stills_row}}</div></div>
+  <div class="wrap"><span class="label row-label">{{t:common.row_real}}</span></div>
+  <div class="marquee marquee-real"><div class="marquee-track">{{stills_row_real}}</div></div>
+  <div class="wrap"><span class="label row-label">{{t:common.row_direction}}</span></div>
+  <div class="marquee rev"><div class="marquee-track">{{stills_row_stock}}</div></div>
 </section>
 
 <section class="packs" id="plans">
@@ -165,31 +168,34 @@
           <li>{{t:common.plan1_l3}}</li>
           <li>{{t:common.plan1_l4}}</li>
         </ul>
-        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Rebuild">{{t:common.begin}} <span class="arr">→</span></a>
+        <a href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Rebuild" class="btn-solid">{{t:common.begin}} →</a>
       </div>
-      <div class="eng" data-reveal>
+      <div class="eng featured" data-reveal>
         <span class="no">02</span>
+        <span class="feat">{{t:common.feat}}</span>
         <h3>The Programme</h3>
         <p class="sub">{{t:common.plan2_sub}}</p>
+        <p class="price-line"><span data-startprice-monthly="programme">—</span> <small>{{t:common.per_month_lbl}}</small></p>
         <ul>
           <li class="lead">{{t:common.plan2_l1}}</li>
           <li>{{t:common.plan2_l2}}</li>
           <li>{{t:common.plan2_l3}}</li>
           <li>{{t:common.plan2_l4}}</li>
         </ul>
-        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Programme">{{t:common.begin}} <span class="arr">→</span></a>
+        <a href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Programme" class="btn-solid">{{t:common.begin}} →</a>
       </div>
       <div class="eng" data-reveal>
         <span class="no">03</span>
         <h3>The Partnership</h3>
         <p class="sub">{{t:common.plan3_sub}}</p>
+        <p class="price-line"><span data-startprice-monthly="partnership">—</span> <small>{{t:common.per_month_lbl}}</small></p>
         <ul>
           <li class="lead">{{t:common.plan3_l1}}</li>
           <li>{{t:common.plan3_l2}}</li>
           <li>{{t:common.plan3_l3}}</li>
           <li>{{t:common.plan3_l4}}</li>
         </ul>
-        <a class="tlink" href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Partnership">{{t:common.begin}} <span class="arr">→</span></a>
+        <a href="mailto:badal@sutrahaus.com?subject={{t:common.eng_subject}}%20—%20The%20Partnership" class="btn-solid">{{t:common.begin}} →</a>
       </div>
     </div>
     <p class="fine" data-reveal>{{t:common.plans_fine}}</p>
@@ -215,10 +221,11 @@
     <h2 data-reveal>{{t:PFX.contact_h}}</h2>
     <form class="cform" data-reveal>
       <input type="text" name="cname" placeholder="{{t:common.f_name}}" autocomplete="name">
+      <input type="email" name="cemail" placeholder="{{t:common.f_email}}" required autocomplete="email">
       <input type="text" name="cbiz" placeholder="{{t:common.f_biz}}">
       <input type="text" name="cneed" placeholder="{{t:common.f_need}}">
       <button type="submit" class="btn-solid">{{t:common.f_send}}</button>
-      <span class="cform-note">{{t:common.f_note}}</span>
+      <span class="cform-note" data-sent="{{t:common.f_sent}}">{{t:common.f_note}}</span>
     </form>
     <a class="mail" href="mailto:badal@sutrahaus.com" data-reveal>badal@sutrahaus.com</a>
     <p class="fine" data-reveal>{{t:common.contact_fine}}</p>
