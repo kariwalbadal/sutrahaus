@@ -17,7 +17,9 @@ const BANNER_TEXT = {
   pt: 'Ver esta página em português',
   pl: 'Zobacz tę stronę po polsku',
 };
-const SITE = 'https://sutrahaus.com';
+// Until sutrahaus.com DNS is cut over from the old Shopify store,
+// canonicals/og/sitemap must point at the URL that actually serves this site.
+const SITE = 'https://kariwalbadal.github.io/sutrahaus';
 
 const PAGES = [
   { id: 'home', template: 'home.html', dir: '' },

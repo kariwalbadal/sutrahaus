@@ -197,5 +197,11 @@
   "common.plans_fine": "Il preventivo esatto è dimensionato per struttura o brand e confermato via e-mail — senza sorprese. <b>Ogni creatività è personalizzata, mai riutilizzata, mai condivisa.</b> Amate già il vostro sito? The Programme e The Partnership funzionano anche da soli.",
   "home.eyebrow": "Studio di design & media — per hotel e brand",
   "hotels.startline": "Le formule hotel partono da <b data-startprice=\"hotels\">₹3,500</b> per un sito completamente ricostruito — creatività di lancio in omaggio.",
-  "commerce.startline": "Le formule brand partono da <b data-startprice=\"commerce\">₹10,000</b> per un negozio completo — creatività di lancio in omaggio."
+  "commerce.startline": "Le formule brand partono da <b data-startprice=\"commerce\">₹10,000</b> per un negozio completo — creatività di lancio in omaggio.",
+  "common.hero_cta": "Ricevete un concept di homepage in omaggio",
+  "common.f_name": "Il vostro nome",
+  "common.f_biz": "Nome dell'hotel o del brand",
+  "common.f_need": "Di cosa avete bisogno?",
+  "common.f_send": "Inviare la richiesta",
+  "common.f_note": "Apre la vostra e-mail con tutto precompilato."
 }

@@ -197,5 +197,11 @@
   "common.plans_fine": "Das genaue Angebot wird pro Haus oder Marke kalkuliert und per E-Mail bestätigt — keine Überraschungen. <b>Jede Kreation ist personalisiert, wird nie wiederverwendet und nie geteilt.</b> Sie lieben Ihre Website schon? The Programme und The Partnership laufen auch eigenständig.",
   "home.eyebrow": "Design- & Medienstudio — für Hotels und Konsumentenmarken",
   "hotels.startline": "Hotel-Modelle beginnen bei <b data-startprice=\"hotels\">₹3,500</b> für einen kompletten Website-Neuaufbau — Launch-Kreationen inklusive.",
-  "commerce.startline": "Marken-Modelle beginnen bei <b data-startprice=\"commerce\">₹10,000</b> für einen kompletten Shop-Aufbau — Launch-Kreationen inklusive."
+  "commerce.startline": "Marken-Modelle beginnen bei <b data-startprice=\"commerce\">₹10,000</b> für einen kompletten Shop-Aufbau — Launch-Kreationen inklusive.",
+  "common.hero_cta": "Kostenloses Startseiten-Konzept erhalten",
+  "common.f_name": "Ihr Name",
+  "common.f_biz": "Hotel- oder Markenname",
+  "common.f_need": "Was brauchen Sie?",
+  "common.f_send": "Anfrage senden",
+  "common.f_note": "Öffnet Ihr E-Mail-Programm, alles vorausgefüllt."
 }

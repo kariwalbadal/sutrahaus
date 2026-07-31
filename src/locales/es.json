@@ -197,5 +197,11 @@
   "common.plans_fine": "El presupuesto exacto se dimensiona por establecimiento o marca y se confirma por correo — sin sorpresas. <b>Cada creatividad es personalizada, nunca se reutiliza y nunca se comparte.</b> ¿Ya le encanta su web? The Programme y The Partnership también funcionan por separado.",
   "home.eyebrow": "Estudio de diseño & media — para hoteles y marcas",
   "hotels.startline": "Los planes de hotel empiezan en <b data-startprice=\"hotels\">₹3,500</b> por una web completamente reconstruida — creatividades de lanzamiento de regalo.",
-  "commerce.startline": "Los planes de marca empiezan en <b data-startprice=\"commerce\">₹10,000</b> por una tienda completa — creatividades de lanzamiento de regalo."
+  "commerce.startline": "Los planes de marca empiezan en <b data-startprice=\"commerce\">₹10,000</b> por una tienda completa — creatividades de lanzamiento de regalo.",
+  "common.hero_cta": "Reciba un concepto de portada gratis",
+  "common.f_name": "Su nombre",
+  "common.f_biz": "Nombre del hotel o la marca",
+  "common.f_need": "¿Qué necesita?",
+  "common.f_send": "Enviar consulta",
+  "common.f_note": "Abre su correo con todo prellenado."
 }

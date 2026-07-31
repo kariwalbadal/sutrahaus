@@ -15,7 +15,7 @@
   <meta property="og:title" content="{{t:PFX.title}}">
   <meta property="og:description" content="{{t:PFX.desc}}">
   <meta property="og:url" content="{{canonical}}">
-  <meta property="og:image" content="https://sutrahaus.com/assets/og.jpg">
+  <meta property="og:image" content="https://kariwalbadal.github.io/sutrahaus/assets/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,9 +99,11 @@
 </section>
 
 <section class="deliver">
-  <div class="wrap">
-    <span class="label" data-reveal>{{t:PFX.deliver_label}}</span>
-    <h2 data-reveal>{{t:PFX.deliver_h}}</h2>
+  <div class="wrap deliver-grid">
+    <div class="deliver-lead">
+      <span class="label" data-reveal>{{t:PFX.deliver_label}}</span>
+      <h2 data-reveal>{{t:PFX.deliver_h}}</h2>
+    </div>
     <div class="dlist">
       <div data-reveal><b>{{t:PFX.d1_h}}</b><span>{{t:PFX.d1_p}}</span></div>
       <div data-reveal><b>{{t:PFX.d2_h}}</b><span>{{t:PFX.d2_p}}</span></div>
@@ -211,6 +213,13 @@
   <div class="wrap inner">
     <span class="label" data-reveal>{{t:common.contact_label}}</span>
     <h2 data-reveal>{{t:PFX.contact_h}}</h2>
+    <form class="cform" data-reveal>
+      <input type="text" name="cname" placeholder="{{t:common.f_name}}" autocomplete="name">
+      <input type="text" name="cbiz" placeholder="{{t:common.f_biz}}">
+      <input type="text" name="cneed" placeholder="{{t:common.f_need}}">
+      <button type="submit" class="btn-solid">{{t:common.f_send}}</button>
+      <span class="cform-note">{{t:common.f_note}}</span>
+    </form>
     <a class="mail" href="mailto:badal@sutrahaus.com" data-reveal>badal@sutrahaus.com</a>
     <p class="fine" data-reveal>{{t:common.contact_fine}}</p>
   </div>

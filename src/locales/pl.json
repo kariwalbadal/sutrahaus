@@ -149,5 +149,11 @@
   "commerce.a3": "Większość sklepów rusza w kilka tygodni od zatwierdzenia konceptu. Plany miesięczne działają w stałym rytmie.",
   "commerce.q4": "Czy The Programme działa na istniejącym sklepie?",
   "commerce.a4": "Tak — zdjęcia i treści działają samodzielnie. Bez przebudowy.",
-  "commerce.contact_h": "Niech świat <em>tego zapragnie.</em>"
+  "commerce.contact_h": "Niech świat <em>tego zapragnie.</em>",
+  "common.hero_cta": "Otrzymaj darmowy koncept strony głównej",
+  "common.f_name": "Twoje imię",
+  "common.f_biz": "Nazwa hotelu lub marki",
+  "common.f_need": "Czego potrzebujesz?",
+  "common.f_send": "Wyślij zapytanie",
+  "common.f_note": "Otwiera Twój program pocztowy z wypełnioną treścią."
 }

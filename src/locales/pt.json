@@ -149,5 +149,11 @@
   "commerce.a3": "A maioria das lojas fica online poucas semanas depois da aprovação do conceito. Os planos mensais seguem um ritmo fixo.",
   "commerce.q4": "The Programme funciona numa loja existente?",
   "commerce.a4": "Sim — imagens e conteúdos funcionam sozinhos. Sem reconstrução.",
-  "commerce.contact_h": "Faça o mundo <em>querê-lo.</em>"
+  "commerce.contact_h": "Faça o mundo <em>querê-lo.</em>",
+  "common.hero_cta": "Receba um conceito de página inicial grátis",
+  "common.f_name": "O seu nome",
+  "common.f_biz": "Nome do hotel ou da marca",
+  "common.f_need": "Do que precisa?",
+  "common.f_send": "Enviar pedido",
+  "common.f_note": "Abre o seu e-mail com tudo preenchido."
 }

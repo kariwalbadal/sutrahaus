@@ -197,5 +197,11 @@
   "common.plans_fine": "Le devis exact est établi selon votre établissement ou votre marque et confirmé par e-mail — sans surprise. <b>Chaque création est personnalisée, jamais réutilisée, jamais partagée.</b> Vous aimez déjà votre site ? The Programme et The Partnership fonctionnent aussi seuls.",
   "home.eyebrow": "Studio de design & média — pour les hôtels et les marques",
   "hotels.startline": "Les formules hôtel commencent à <b data-startprice=\"hotels\">₹3,500</b> pour une refonte complète de site — créations de lancement offertes.",
-  "commerce.startline": "Les formules marque commencent à <b data-startprice=\"commerce\">₹10,000</b> pour une boutique complète — créations de lancement offertes."
+  "commerce.startline": "Les formules marque commencent à <b data-startprice=\"commerce\">₹10,000</b> pour une boutique complète — créations de lancement offertes.",
+  "common.hero_cta": "Recevez un concept de page d'accueil offert",
+  "common.f_name": "Votre nom",
+  "common.f_biz": "Nom de l'hôtel ou de la marque",
+  "common.f_need": "De quoi avez-vous besoin ?",
+  "common.f_send": "Envoyer la demande",
+  "common.f_note": "Ouvre votre messagerie avec tout pré-rempli."
 }

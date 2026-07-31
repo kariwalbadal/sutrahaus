@@ -99,7 +99,24 @@
       return '<span class="ln"><span>' + c + '</span></span>';
     }).join(' ');
   }
-  document.querySelectorAll('.vhero h1, .phero h1, .rv-state h2').forEach(splitLines);
+  document.querySelectorAll('.phero h1, .rv-state h2').forEach(splitLines);
+  document.querySelectorAll('.vhero h1').forEach(function (el) {
+    if (reduced || el.dataset.split) return;
+    el.dataset.split = '1';
+    var delay = 250, step = 24, out = [];
+    function chars(text, italic) {
+      return text.split('').map(function (c) {
+        var d = delay; delay += step;
+        if (c === ' ') return ' ';
+        return '<span class="ch' + (italic ? ' it' : '') + '" style="transition-delay:' + d + 'ms">' + c + '</span>';
+      }).join('');
+    }
+    el.childNodes.forEach(function (n) {
+      if (n.nodeType === 3) out.push(chars(n.textContent));
+      else if (n.nodeType === 1) out.push('<em>' + chars(n.textContent) + '</em>');
+    });
+    el.innerHTML = out.join('');
+  });
 
   /* ---------- entrance ---------- */
   window.addEventListener('load', function () {
@@ -232,6 +249,16 @@
       });
     }
   }
+
+  document.querySelectorAll('.cform').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var g = function (n) { return (form.querySelector('[name=' + n + ']') || {}).value || '—'; };
+      var subject = encodeURIComponent('Enquiry — ' + g('cbiz'));
+      var body = encodeURIComponent('Name: ' + g('cname') + '\nHotel / brand: ' + g('cbiz') + '\nWhat we need: ' + g('cneed') + '\n\n(Sent from sutrahaus site)');
+      window.location.href = 'mailto:badal@sutrahaus.com?subject=' + subject + '&body=' + body;
+    });
+  });
 
   onScrollFrame();
 })();
