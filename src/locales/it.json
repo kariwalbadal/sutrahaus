@@ -169,7 +169,7 @@
   "common.statement_h": "Lavoro da grande agenzia. <em>Senza il conto da grande agenzia.</em>",
   "common.statement_p": "Da chi inizia ai grandi brand, serviamo tutti — con formule su misura. Ogni creatività è personalizzata per il vostro brand e mai condivisa con nessuno.",
   "common.reel_h": "Il <em>reel</em>",
-  "common.reel_label": "Film & adv — tocca per l'audio",
+  "common.reel_label": "Film & adv",
   "common.stills_h": "Le <em>immagini</em>",
   "common.stills_label": "Creatività — un linguaggio per brand",
   "common.chip_hotel": "Hotel",
@@ -178,7 +178,7 @@
   "common.stat2": "film brevi prodotti",
   "common.stat3": "brand costruiti da zero",
   "common.stat4": "lingue, un solo studio",
-  "common.startline": "Le formule partono da <b data-startprice=\"hotels\">₹5,000</b> per un sito completamente ricostruito — con un set di creatività di lancio in omaggio.",
+  "common.startline": "Le formule partono da <b data-startprice=\"hotels\">₹3,500</b> per un sito completamente ricostruito — con un set di creatività di lancio in omaggio.",
   "common.plan1_sub": "Il sito, completo",
   "common.plan1_l1": "Sito completo, progettato e costruito",
   "common.plan1_l2": "Prenotazioni / negozio integrati",
@@ -196,6 +196,6 @@
   "common.plan3_l4": "Priorità di produzione",
   "common.plans_fine": "Il preventivo esatto è dimensionato per struttura o brand e confermato via e-mail — senza sorprese. <b>Ogni creatività è personalizzata, mai riutilizzata, mai condivisa.</b> Amate già il vostro sito? The Programme e The Partnership funzionano anche da soli.",
   "home.eyebrow": "Studio di design & media — per hotel e brand",
-  "hotels.startline": "Le formule hotel partono da <b data-startprice=\"hotels\">₹5,000</b> per un sito completamente ricostruito — creatività di lancio in omaggio.",
+  "hotels.startline": "Le formule hotel partono da <b data-startprice=\"hotels\">₹3,500</b> per un sito completamente ricostruito — creatività di lancio in omaggio.",
   "commerce.startline": "Le formule brand partono da <b data-startprice=\"commerce\">₹10,000</b> per un negozio completo — creatività di lancio in omaggio."
 }

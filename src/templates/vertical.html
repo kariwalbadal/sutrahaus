@@ -46,19 +46,23 @@
 </head>
 <body>
 
+<div class="progress" aria-hidden="true"></div>
+
 <header class="site-head" id="top">
   <div class="wrap">
     <a href="{{root}}{{home_path}}" class="lockup" aria-label="Sutra Haus">
       <span class="wm-light">Sutra<i>&nbsp;·&nbsp;</i>Haus</span>
     </a>
+    <div class="head-right">
+    <a class="enquire head-cta" href="mailto:badal@sutrahaus.com?subject={{t:common.mail_subject}}">{{t:common.enquire}}</a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">{{t:common.menu}}</button>
     <nav class="nav">
       <a href="{{hotels_href}}" class="{{active_hotels}}">{{t:common.nav_hotels}}</a>
       <a href="{{commerce_href}}" class="{{active_commerce}}">{{t:common.nav_commerce}}</a>
       <a href="{{root}}{{home_path}}#studio">{{t:common.nav_studio}}</a>
-      <a class="enquire" href="mailto:badal@sutrahaus.com?subject={{t:common.mail_subject}}">{{t:common.enquire}}</a>
       <span class="lang"><select aria-label="Language" onchange="location.href=this.value">{{lang_options}}</select></span>
     </nav>
+    </div>
   </div>
 </header>
 
@@ -203,6 +207,7 @@
 </section>
 
 <section class="contact" id="contact">
+  <span class="ghost" aria-hidden="true">Sutra</span>
   <div class="wrap inner">
     <span class="label" data-reveal>{{t:common.contact_label}}</span>
     <h2 data-reveal>{{t:PFX.contact_h}}</h2>

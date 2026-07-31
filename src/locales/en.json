@@ -169,7 +169,7 @@
   "common.statement_h": "Big-agency work. <em>Without the big-agency bill.</em>",
   "common.statement_p": "From starters to big brands, we serve all — with plans you're comfortable with. Every creative is personalised to your brand, and never shared with anyone else.",
   "common.reel_h": "The <em>reel</em>",
-  "common.reel_label": "Films & ad work — tap for sound",
+  "common.reel_label": "Films & ad work",
   "common.stills_h": "The <em>stills</em>",
   "common.stills_label": "Image creatives — one language per brand",
   "common.chip_hotel": "Hotel",
@@ -178,7 +178,7 @@
   "common.stat2": "short films produced",
   "common.stat3": "brands built end to end",
   "common.stat4": "languages, one studio",
-  "common.startline": "Plans start at <b data-startprice=\"hotels\">₹5,000</b> for a complete website rebuild — with a set of launch creatives on us.",
+  "common.startline": "Plans start at <b data-startprice=\"hotels\">₹3,500</b> for a complete website rebuild — with a set of launch creatives on us.",
   "common.plan1_sub": "The website, complete",
   "common.plan1_l1": "Complete website, designed & built",
   "common.plan1_l2": "Booking / store flows integrated",
@@ -196,6 +196,6 @@
   "common.plan3_l4": "Priority turnaround",
   "common.plans_fine": "Exact quotes are scoped per property or brand and confirmed over email — no surprises. <b>Every creative is personalised, never reused, never shared.</b> Already have a website you love? The Programme and The Partnership run standalone too.",
   "home.eyebrow": "A design & media studio — for hotels and for consumer brands",
-  "hotels.startline": "Hotel plans start at <b data-startprice=\"hotels\">₹5,000</b> for a complete website rebuild — with a set of launch creatives on us.",
+  "hotels.startline": "Hotel plans start at <b data-startprice=\"hotels\">₹3,500</b> for a complete website rebuild — with a set of launch creatives on us.",
   "commerce.startline": "Brand plans start at <b data-startprice=\"commerce\">₹10,000</b> for a complete store build — with a set of launch creatives on us."
 }

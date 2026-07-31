@@ -169,7 +169,7 @@
   "common.statement_h": "Arbeit wie von der großen Agentur. <em>Ohne die große Rechnung.</em>",
   "common.statement_p": "Vom Start-up bis zur großen Marke — wir arbeiten für alle, mit Modellen, die zu Ihnen passen. Jede Kreation ist auf Ihre Marke personalisiert und wird nie mit anderen geteilt.",
   "common.reel_h": "Das <em>Reel</em>",
-  "common.reel_label": "Filme & Ads — tippen für Ton",
+  "common.reel_label": "Filme & Ads",
   "common.stills_h": "Die <em>Stills</em>",
   "common.stills_label": "Bildkreationen — eine Sprache pro Marke",
   "common.chip_hotel": "Hotel",
@@ -178,7 +178,7 @@
   "common.stat2": "Kurzfilme produziert",
   "common.stat3": "Marken komplett aufgebaut",
   "common.stat4": "Sprachen, ein Studio",
-  "common.startline": "Modelle beginnen bei <b data-startprice=\"hotels\">₹5,000</b> für einen kompletten Website-Neuaufbau — inklusive Launch-Kreationen gratis.",
+  "common.startline": "Modelle beginnen bei <b data-startprice=\"hotels\">₹3,500</b> für einen kompletten Website-Neuaufbau — inklusive Launch-Kreationen gratis.",
   "common.plan1_sub": "Die Website, komplett",
   "common.plan1_l1": "Komplette Website, entworfen & gebaut",
   "common.plan1_l2": "Buchung / Shop integriert",
@@ -196,6 +196,6 @@
   "common.plan3_l4": "Bevorzugte Bearbeitung",
   "common.plans_fine": "Das genaue Angebot wird pro Haus oder Marke kalkuliert und per E-Mail bestätigt — keine Überraschungen. <b>Jede Kreation ist personalisiert, wird nie wiederverwendet und nie geteilt.</b> Sie lieben Ihre Website schon? The Programme und The Partnership laufen auch eigenständig.",
   "home.eyebrow": "Design- & Medienstudio — für Hotels und Konsumentenmarken",
-  "hotels.startline": "Hotel-Modelle beginnen bei <b data-startprice=\"hotels\">₹5,000</b> für einen kompletten Website-Neuaufbau — Launch-Kreationen inklusive.",
+  "hotels.startline": "Hotel-Modelle beginnen bei <b data-startprice=\"hotels\">₹3,500</b> für einen kompletten Website-Neuaufbau — Launch-Kreationen inklusive.",
   "commerce.startline": "Marken-Modelle beginnen bei <b data-startprice=\"commerce\">₹10,000</b> für einen kompletten Shop-Aufbau — Launch-Kreationen inklusive."
 }

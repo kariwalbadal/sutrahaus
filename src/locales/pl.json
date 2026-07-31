@@ -9,7 +9,7 @@
   "common.statement_h": "Praca jak z wielkiej agencji. <em>Bez rachunku wielkiej agencji.</em>",
   "common.statement_p": "Od początkujących po wielkie marki — pracujemy dla wszystkich, z planami na Państwa miarę. Każdy materiał jest personalizowany dla Państwa marki i nigdy nie trafia do nikogo innego.",
   "common.reel_h": "<em>Reel</em>",
-  "common.reel_label": "Filmy i reklamy — dotknij, by włączyć dźwięk",
+  "common.reel_label": "Filmy i reklamy",
   "common.stills_h": "<em>Grafiki</em>",
   "common.stills_label": "Kreacje graficzne — jeden język na markę",
   "common.chip_hotel": "Hotel",
@@ -47,7 +47,6 @@
   "common.studio_label": "Studio",
   "common.studio_h": "Jedno studio. <em>Każda nić.</em>",
   "common.studio_p": "<b>Sutra</b> — w sanskrycie „nić”. Sutra Haus (Sutrahaus LLP, Bengaluru) to studio designu i mediów dla hoteli i marek konsumenckich na całym świecie: strony, grafiki i filmy, tworzone własnymi rękami, w jednym języku wizualnym — nigdy z szablonu.",
-
   "home.title": "Sutra Haus — Studio designu i mediów dla hoteli i marek",
   "home.desc": "Strony internetowe, kreacje graficzne i filmy dla hoteli i marek konsumenckich. Studio designu i mediów działające na całym świecie — media przede wszystkim, bez szablonów.",
   "home.eyebrow": "Studio designu i mediów — dla hoteli i dla marek",
@@ -57,7 +56,6 @@
   "home.door1_cta": "Dla hoteli",
   "home.door2_h": "Państwo tworzą produkt. <em>My sprawiamy, że się sprzedaje.</em>",
   "home.door2_cta": "Dla marek",
-
   "hotels.title": "Strony dla hoteli, grafiki i filmy — Sutra Haus",
   "hotels.desc": "Strony z rezerwacją bezpośrednią, 30 grafik miesięcznie i krótkie filmy — jedno studio dla całej cyfrowej powierzchni hotelu, w cenach Państwa rynku.",
   "hotels.svc_name": "Projektowanie stron dla hoteli i media",
@@ -105,7 +103,6 @@
   "hotels.q4": "Dlaczego tylko fragmenty?",
   "hotels.a4": "Dyskrecja — strony i profile należą do klientów. Pełne portfolio udostępniamy prywatnie, na prośbę.",
   "hotels.contact_h": "Niech to Państwa hotel <em>zapamiętają.</em>",
-
   "commerce.title": "Sklepy e-commerce i treści marek — Sutra Haus",
   "commerce.desc": "Sklepy, które sprzedają, zdjęcia produktowe i lifestyle oraz krótkie filmy — jedno studio od produktu do zakupu, w cenach Państwa rynku.",
   "commerce.svc_name": "Design e-commerce i marek",

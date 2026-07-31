@@ -169,7 +169,7 @@
   "common.statement_h": "Trabajo de gran agencia. <em>Sin factura de gran agencia.</em>",
   "common.statement_p": "De los que empiezan a las grandes marcas, servimos a todos — con planes a su medida. Cada creatividad se personaliza para su marca y nunca se comparte con nadie.",
   "common.reel_h": "El <em>reel</em>",
-  "common.reel_label": "Películas & anuncios — toque para el sonido",
+  "common.reel_label": "Películas & anuncios",
   "common.stills_h": "Las <em>imágenes</em>",
   "common.stills_label": "Creatividades — un lenguaje por marca",
   "common.chip_hotel": "Hotel",
@@ -178,7 +178,7 @@
   "common.stat2": "películas cortas producidas",
   "common.stat3": "marcas construidas desde cero",
   "common.stat4": "idiomas, un solo estudio",
-  "common.startline": "Los planes empiezan en <b data-startprice=\"hotels\">₹5,000</b> por una web completamente reconstruida — con un set de creatividades de lanzamiento de regalo.",
+  "common.startline": "Los planes empiezan en <b data-startprice=\"hotels\">₹3,500</b> por una web completamente reconstruida — con un set de creatividades de lanzamiento de regalo.",
   "common.plan1_sub": "La web, completa",
   "common.plan1_l1": "Web completa, diseñada y construida",
   "common.plan1_l2": "Reservas / tienda integradas",
@@ -196,6 +196,6 @@
   "common.plan3_l4": "Prioridad de producción",
   "common.plans_fine": "El presupuesto exacto se dimensiona por establecimiento o marca y se confirma por correo — sin sorpresas. <b>Cada creatividad es personalizada, nunca se reutiliza y nunca se comparte.</b> ¿Ya le encanta su web? The Programme y The Partnership también funcionan por separado.",
   "home.eyebrow": "Estudio de diseño & media — para hoteles y marcas",
-  "hotels.startline": "Los planes de hotel empiezan en <b data-startprice=\"hotels\">₹5,000</b> por una web completamente reconstruida — creatividades de lanzamiento de regalo.",
+  "hotels.startline": "Los planes de hotel empiezan en <b data-startprice=\"hotels\">₹3,500</b> por una web completamente reconstruida — creatividades de lanzamiento de regalo.",
   "commerce.startline": "Los planes de marca empiezan en <b data-startprice=\"commerce\">₹10,000</b> por una tienda completa — creatividades de lanzamiento de regalo."
 }

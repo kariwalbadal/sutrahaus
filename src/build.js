@@ -101,8 +101,19 @@ function reelTile(r, root, t) {
   const snd = r.audio ? '<button class="snd" aria-label="Sound">♪</button>' : '';
   return `      <div class="reel"${audio}>${chip}<video muted loop playsinline preload="metadata" poster="${root}assets/video/reels/${r.f}-poster.jpg"><source src="${root}assets/video/reels/${r.f}.mp4" type="video/mp4"></video>${snd}</div>`;
 }
+const ALT_PREFIX = {
+  chinmaye: 'Original Instagram creative for a Bhagalpur hotel',
+  grand: 'Banquet launch creative',
+  ephoria: 'Ephoria brand imagery',
+  stock: 'Social-first imagery',
+};
+function altFor(s) {
+  const [dir, file] = s.split('/');
+  const label = file.replace(/^(hotel-instagram-creative-|banquet-launch-creative-|ephoria-|stock-)/, '').replace(/-/g, ' ');
+  return `${ALT_PREFIX[dir] || 'Creative'} — ${label}`;
+}
 function stillsRow(list, root) {
-  const one = list.map((s) => `<figure><img src="${root}assets/img/${s}.jpg" alt="" loading="lazy" width="800" height="1000"></figure>`).join('');
+  const one = list.map((s) => `<figure><img src="${root}assets/img/${s}.jpg" alt="${altFor(s)}" loading="lazy" width="800" height="1000"></figure>`).join('');
   return one + one; // doubled for seamless loop
 }
 

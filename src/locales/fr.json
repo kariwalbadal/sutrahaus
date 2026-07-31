@@ -169,7 +169,7 @@
   "common.statement_h": "Le travail d'une grande agence. <em>Sans la facture d'une grande agence.</em>",
   "common.statement_p": "Des débutants aux grandes marques, nous servons tout le monde — avec des formules à votre mesure. Chaque création est personnalisée pour votre marque, et jamais partagée avec qui que ce soit.",
   "common.reel_h": "Le <em>reel</em>",
-  "common.reel_label": "Films & publicités — touchez pour le son",
+  "common.reel_label": "Films & publicités",
   "common.stills_h": "Les <em>images</em>",
   "common.stills_label": "Créations visuelles — un langage par marque",
   "common.chip_hotel": "Hôtel",
@@ -178,7 +178,7 @@
   "common.stat2": "films courts produits",
   "common.stat3": "marques construites de A à Z",
   "common.stat4": "langues, un seul studio",
-  "common.startline": "Les formules commencent à <b data-startprice=\"hotels\">₹5,000</b> pour une refonte complète de site — avec un jeu de créations de lancement offert.",
+  "common.startline": "Les formules commencent à <b data-startprice=\"hotels\">₹3,500</b> pour une refonte complète de site — avec un jeu de créations de lancement offert.",
   "common.plan1_sub": "Le site, complet",
   "common.plan1_l1": "Site complet, conçu & développé",
   "common.plan1_l2": "Réservation / boutique intégrées",
@@ -196,6 +196,6 @@
   "common.plan3_l4": "Priorité de production",
   "common.plans_fine": "Le devis exact est établi selon votre établissement ou votre marque et confirmé par e-mail — sans surprise. <b>Chaque création est personnalisée, jamais réutilisée, jamais partagée.</b> Vous aimez déjà votre site ? The Programme et The Partnership fonctionnent aussi seuls.",
   "home.eyebrow": "Studio de design & média — pour les hôtels et les marques",
-  "hotels.startline": "Les formules hôtel commencent à <b data-startprice=\"hotels\">₹5,000</b> pour une refonte complète de site — créations de lancement offertes.",
+  "hotels.startline": "Les formules hôtel commencent à <b data-startprice=\"hotels\">₹3,500</b> pour une refonte complète de site — créations de lancement offertes.",
   "commerce.startline": "Les formules marque commencent à <b data-startprice=\"commerce\">₹10,000</b> pour une boutique complète — créations de lancement offertes."
 }
