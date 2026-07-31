@@ -163,5 +163,6 @@
   "common.row_real": "Z naszych marek — prawdziwe, dostarczone prace",
   "common.row_direction": "Kierunek & nastroje — co możemy stworzyć dla Twojej",
   "common.chip_client": "Reklama klienta",
-  "common.chip_direction": "Kierunek"
+  "common.chip_direction": "Kierunek",
+  "common.one_time_lbl": "jednorazowo, od"
 }

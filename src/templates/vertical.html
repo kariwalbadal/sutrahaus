@@ -162,6 +162,7 @@
         <span class="no">01</span>
         <h3>The Rebuild</h3>
         <p class="sub">{{t:common.plan1_sub}}</p>
+        <p class="price-line"><span data-startprice="{{sp_vertical}}">{{sp_fallback}}</span> <small>{{t:common.one_time_lbl}}</small></p>
         <ul>
           <li class="lead">{{t:common.plan1_l1}}</li>
           <li>{{t:common.plan1_l2}}</li>
@@ -220,10 +221,10 @@
     <span class="label" data-reveal>{{t:common.contact_label}}</span>
     <h2 data-reveal>{{t:PFX.contact_h}}</h2>
     <form class="cform" data-reveal>
-      <input type="text" name="cname" placeholder="{{t:common.f_name}}" autocomplete="name">
-      <input type="email" name="cemail" placeholder="{{t:common.f_email}}" required autocomplete="email">
-      <input type="text" name="cbiz" placeholder="{{t:common.f_biz}}">
-      <input type="text" name="cneed" placeholder="{{t:common.f_need}}">
+      <input type="text" name="cname" placeholder="{{t:common.f_name}}" aria-label="{{t:common.f_name}}" autocomplete="name">
+      <input type="email" name="cemail" placeholder="{{t:common.f_email}}" aria-label="{{t:common.f_email}}" required autocomplete="email">
+      <input type="text" name="cbiz" placeholder="{{t:common.f_biz}}" aria-label="{{t:common.f_biz}}">
+      <input type="text" name="cneed" placeholder="{{t:common.f_need}}" aria-label="{{t:common.f_need}}">
       <button type="submit" class="btn-solid">{{t:common.f_send}}</button>
       <span class="cform-note" data-sent="{{t:common.f_sent}}">{{t:common.f_note}}</span>
     </form>

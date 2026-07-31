@@ -21,6 +21,16 @@ const BANNER_TEXT = {
 // canonicals/og/sitemap must point at the URL that actually serves this site.
 const SITE = 'https://kariwalbadal.github.io/sutrahaus';
 
+const LOCALE_FALLBACK = {
+  en: { hotels: '₹3,500', commerce: '₹10,000' },
+  fr: { hotels: '140 €', commerce: '280 €' },
+  de: { hotels: '140 €', commerce: '280 €' },
+  es: { hotels: '140 €', commerce: '280 €' },
+  it: { hotels: '140 €', commerce: '280 €' },
+  pt: { hotels: '110 €', commerce: '220 €' },
+  pl: { hotels: '490 zł', commerce: '980 zł' },
+};
+
 const PAGES = [
   { id: 'home', template: 'home.html', dir: '' },
   { id: 'hotels', template: 'vertical.html', dir: 'hotels/', vertical: 'hotels' },
@@ -64,15 +74,16 @@ const REELS = [
   { f: 'brand-lipstick', v: 'brand' },
 ];
 const STILLS_HOTEL = [
-  'chinmaye/hotel-instagram-creative-scoreboard', 'stock/stock-dining-candle',
+  'chinmaye/hotel-instagram-creative-scoreboard', 'poster/hotel-suite',
   'grand/banquet-launch-creative-naam', 'chinmaye/hotel-instagram-creative-calendar',
-  'stock/stock-cafe-niche', 'chinmaye/hotel-instagram-creative-akhbaar',
-  'grand/banquet-launch-creative-saat-phere', 'stock/stock-dining-chef',
+  'poster/hotel-view', 'chinmaye/hotel-instagram-creative-akhbaar',
+  'grand/banquet-launch-creative-saat-phere', 'poster/hotel-pool',
   'chinmaye/hotel-instagram-creative-mithai', 'chinmaye/hotel-instagram-creative-doli',
-  'stock/stock-cafe-cactus', 'grand/banquet-launch-creative-sehra',
-  'chinmaye/hotel-instagram-creative-rangoli', 'stock/stock-dining-bar',
+  'poster/hotel-spa', 'grand/banquet-launch-creative-sehra',
+  'chinmaye/hotel-instagram-creative-rangoli', 'poster/hotel-room',
   'chinmaye/hotel-instagram-creative-kundli', 'grand/banquet-launch-creative-keyhole',
-  'chinmaye/hotel-instagram-creative-paan', 'chinmaye/hotel-instagram-creative-jhoola',
+  'chinmaye/hotel-instagram-creative-paan', 'stock/stock-dining-candle',
+  'chinmaye/hotel-instagram-creative-jhoola', 'stock/stock-dining-chef',
 ];
 const STILLS_BRAND = [
   'ephoria/ephoria-product-photography-bundle', 'stock/stock-fashion-studio',
@@ -111,14 +122,21 @@ const ALT_PREFIX = {
   grand: 'Banquet launch creative',
   ephoria: 'Ephoria brand imagery',
   stock: 'Social-first imagery',
+  poster: 'Hotel film frame',
 };
+const POSTER_DIR = 'assets/video/reels/';
 function altFor(s) {
   const [dir, file] = s.split('/');
   const label = file.replace(/^(hotel-instagram-creative-|banquet-launch-creative-|ephoria-|stock-)/, '').replace(/-/g, ' ');
   return `${ALT_PREFIX[dir] || 'Creative'} — ${label}`;
 }
 function stillsRow(list, root) {
-  const one = list.map((s) => `<figure><img src="${root}assets/img/${s}.jpg" alt="${altFor(s)}" loading="lazy" width="800" height="1000"></figure>`).join('');
+  const one = list.map((s) => {
+    const src = s.startsWith('poster/')
+      ? `${root}${POSTER_DIR}${s.slice(7)}-poster.jpg`
+      : `${root}assets/img/${s}.jpg`;
+    return `<figure><img src="${src}" alt="${altFor(s)}" loading="lazy" width="800" height="1000"></figure>`;
+  }).join('');
   return one + one; // doubled for seamless loop
 }
 
@@ -183,7 +201,13 @@ for (const locale of LOCALES) {
       banner = `<div class="lang-banner" ${attrs}><span class="lb-slot"></span><button aria-label="Dismiss" class="lb-close">×</button></div>`;
     }
 
+    const fb = LOCALE_FALLBACK[locale] || LOCALE_FALLBACK.en;
+    const spVertical = page.vertical === 'commerce' ? 'commerce' : 'hotels';
     html = html
+      .split('{{sp_vertical}}').join(spVertical)
+      .split('{{sp_fallback}}').join(fb[spVertical])
+      .split('₹3,500').join(fb.hotels)
+      .split('₹10,000').join(fb.commerce)
       .split('{{lang}}').join(locale)
       .split('{{root}}').join(root)
       .split('{{home_path}}').join(localePrefix(locale))

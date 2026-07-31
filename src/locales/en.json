@@ -211,5 +211,6 @@
   "common.row_real": "From our brands — real, shipped work",
   "common.row_direction": "Direction & moods — what we can build for yours",
   "common.chip_client": "Client ad",
-  "common.chip_direction": "Direction"
+  "common.chip_direction": "Direction",
+  "common.one_time_lbl": "one-time, starting from"
 }

@@ -211,5 +211,6 @@
   "common.row_real": "De nos marques — du travail réel, livré",
   "common.row_direction": "Direction & ambiances — ce que nous pouvons créer pour vous",
   "common.chip_client": "Pub client",
-  "common.chip_direction": "Direction"
+  "common.chip_direction": "Direction",
+  "common.one_time_lbl": "unique, à partir de"
 }

@@ -211,5 +211,6 @@
   "common.row_real": "Aus unseren Marken — echte, gelieferte Arbeit",
   "common.row_direction": "Direction & Stimmungen — was wir für Ihre bauen können",
   "common.chip_client": "Kunden-Ad",
-  "common.chip_direction": "Direction"
+  "common.chip_direction": "Direction",
+  "common.one_time_lbl": "einmalig, ab"
 }

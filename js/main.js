@@ -105,11 +105,15 @@
     el.dataset.split = '1';
     var delay = 250, step = 24, out = [];
     function chars(text, italic) {
-      return text.split('').map(function (c) {
-        var d = delay; delay += step;
-        if (c === ' ') return ' ';
-        return '<span class="ch' + (italic ? ' it' : '') + '" style="transition-delay:' + d + 'ms">' + c + '</span>';
-      }).join('');
+      return text.split(' ').map(function (word) {
+        if (!word) return '';
+        var inner = word.split('').map(function (c) {
+          var d = delay; delay += step;
+          return '<span class="ch' + (italic ? ' it' : '') + '" style="transition-delay:' + d + 'ms">' + c + '</span>';
+        }).join('');
+        delay += step;
+        return '<span class="wd">' + inner + '</span>';
+      }).join(' ');
     }
     el.childNodes.forEach(function (n) {
       if (n.nodeType === 3) out.push(chars(n.textContent));
